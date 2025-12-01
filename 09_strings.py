@@ -239,16 +239,8 @@ s = "hello"
 s = s + "world"
 print(s)
 
-a = 10
-b = 20
-print("Sum =", a + b)
 
 
 
 
-n = int(input("Enter a number: "))
 
-if n % 2 == 0:
-    print("Even number")
-else:
-    print("Odd number")
