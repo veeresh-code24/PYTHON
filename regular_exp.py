@@ -19,10 +19,16 @@ print(text[match.start():match.end()])'''
 # print(text[start:end])
 # print(text[match.start():match.end()])
 
-import re
+'''import re
 text = "Python is very easy"
 regu = r"very"
 match = re.search(regu,text)
 print(match)
-print(text[match.start():match.end()])
+print(text[match.start():match.end()])'''
 
+import re
+
+text = "Python is super easy ."
+regula = r"./"
+match = re.findall(regula,text) #Meta character
+print(match)
