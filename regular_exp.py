@@ -22,7 +22,7 @@ print(text[match.start():match.end()])'''
 import re
 text = "Python is very easy"
 regu = r"very"
-match = re.match(regu,text)
+match = re.search(regu,text)
 print(match)
 print(text[match.start():match.end()])
 
