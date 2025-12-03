@@ -20,44 +20,50 @@
 # if __name__ == '__main__':
 #     main()
 
-def add():
+# def add():
 
-    '''this will do two numbers to substitution'''
-    a = 10
-    b = 20
-    c = a+b
-    print(c)
-
-
-
-
-
-
-def sub():
-    '''this will do two numbers to substitution'''
-    a = 10
-    b = 20
-    c = a-b
-    print(c)
+#     '''this will do two numbers to substitution'''
+#     a = 10
+#     b = 20
+#     c = a+b
+#     print(c)
 
 
 
 
 
 
-def mul():
-    '''this will do two numbers to substitution'''
-    a = 10
-    b = 20
-    c = a*b
-    print(c)
-
-def main():
-    mul()
-    sub()
-    add()
+# def sub():
+#     '''this will do two numbers to substitution'''
+#     a = 10
+#     b = 20
+#     c = a-b
+#     print(c)
 
 
 
-if __name__ == '__main__':
-    main()
+
+
+
+# def mul():
+#     '''this will do two numbers to substitution'''
+#     a = 10
+#     b = 20
+#     c = a*b
+#     print(c)
+
+# def main():
+#     mul()
+#     sub()
+#     add()
+
+
+
+# if __name__ == '__main__':
+#     main()
+
+import re
+text = "Python is the best language"
+regu = r"\b[a-zA-Z]\b"
+lst = re.findall(regu,text)
+print(lst)

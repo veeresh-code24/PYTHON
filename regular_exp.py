@@ -111,7 +111,71 @@ lst = re.findall(regul,text)
 print(lst)
 print(len(lst))'''
 
+#  repeating two times
+
+'''import re
 text = "If foot becomes feet tooth becomes teeth"
+regul = r"[aeiou]{2}"
+lst = re.findall(regul,text)
+print(lst)'''
+
+#  i want weak and week
+
+'''import re
+text = "Only the weak wait for the week to end"
+regul = r"we[ae]k"
+lst = re.findall(regul,text)
+print(lst)'''
+
+# \babc\b or \babc or abc\b or \Babc\B
+
+'''import re
+text = abcpqrxyz
+pqrxyzabc
+pqrabcxyz
+abc
+regula = r"\babc"
+lst = re.search(regula,text)
+print(text[lst.start():lst.end()])
+print(lst)'''
+
+# I wan tfirst character in the sentence
+
+'''import re
+text = "Python is the best language"
+regu = r"^[a-zA-Z]"
+lst = re.findall(regu,text)
+print(lst)
+# print(lst.group())
+# print(text[lst.start():lst.end()])
+# print(lst)
+# print(lst.group())'''
+
+# I want 4 length character.  r"\b[a-zA-Z]{4}\b"
+
+'''import re
+text = "Python is the best language four five"
+regu = r"\b[a-zA-Z]{4}\b"
+lst = re.findall(regu,text)
+# print(lst.group())
+print(lst)'''
+
+# Find the valid gmail r"[a-zA-z0-9_$\-]+@gmail.com". or
+
+import re
+text = '''iranna@gmail.com
+rohit@@gmail.com
+rohit_xys@gmail.com
+roh?>@gmail.com
+rohit@yahoo.com
+rohit@outlook.com
+rohit@hotmail.com
+'''
+regex = r"[a-zA-z0-9_$\-]+@[a-zA-Z]+.com"
+lst = re.findall(regex,text)
+print(lst)
+
+
 
 
 
