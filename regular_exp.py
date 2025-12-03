@@ -12,13 +12,13 @@ print(text[match.start():match.end()])'''
 #  .
 
 
-'''import re
-text = "Python is very easy."
-regex = r"."
-match = re.finditer(regex,text)
-# print(text[match.start():match.end()])
-for i in match:
-    print(text[i.start():i.end()])'''
+# import re
+# text = "Python is very easy."
+# regex = r"."
+# match = re.finditer(regex,text)
+# # print(text[match.start():match.end()])
+# for i in match:
+#     print(text[i.start():i.end()])
 
 
 # \. 
@@ -100,16 +100,16 @@ text = "Python is very easy 1234467890"
 regul = r"\D"
 lst = re.findall(regul,text)
 print(lst)
-print(len(lst))
+print(len(lst))'''
 
 # select the white space \s or \S
 
 import re
 text = "Python is very easy 1234467890"
-regul = r"\S"
+regul = r"[1234567890]+$"
 lst = re.findall(regul,text)
 print(lst)
-print(len(lst))'''
+print(len(lst))
 
 #  repeating two times
 
@@ -162,18 +162,126 @@ print(lst)'''
 
 # Find the valid gmail r"[a-zA-z0-9_$\-]+@gmail.com". or
 
-import re
-text = '''iranna@gmail.com
-rohit@@gmail.com
-rohit_xys@gmail.com
-roh?>@gmail.com
-rohit@yahoo.com
-rohit@outlook.com
-rohit@hotmail.com
-'''
-regex = r"[a-zA-z0-9_$\-]+@[a-zA-Z]+.com"
-lst = re.findall(regex,text)
-print(lst)
+# '''import re
+# text = '''iranna@gmail.com
+# rohit@@gmail.com
+# rohit_xys@gmail.com
+# roh?>@gmail.com
+# rohit@yahoo.com
+# rohit@outlook.com
+# rohit@hotmail.com'''
+# '''
+# # regex = r"[a-zA-z0-9_$\-]+@[a-zA-Z]+.com"
+# # regex = r"[a-zA-Z0-9$_\-]+@[a-zA-z0-9$_/-]+.com"
+# # regex = r"[a-zA-Z0-9$_/-]+@gmail.com"
+
+# # 2 group is there
+
+# '''regu = r"([9a-zA-Z0-9$_/-]+)@([a-zA-Z0-9$_/-]+.com)"
+# match = re.search(regu,text)
+# print(match.group(0))
+# print(match.group(1))
+# print(match.group(2))'''
+
+# # ITERable
+# # regu = r"([9a-zA-Z0-9$_/-]+)@([a-zA-Z0-9$_/-]+.com)"
+# # match = re.findall(regu,text)
+# # print(match)
+
+# # for i in match:
+# #     print(i.group(0))
+# #     print(i.group(1))
+# #     print(i.group(2))
+
+#all gmail are same  sub(pattern,"rep1",string) sub.subn
+
+# import re
+# text = '''iranna@gmail.com
+# rohit@@gmail.com
+# rohit_xys@gmail.com
+# roh?>@gmail.com
+# rohit@yahoo.com
+# rohit@outlook.com
+# rohit@hotmail.com'''
+
+# regu = r"@[a-zA-z]+.com" 
+# match = re.subn(regu,"@roomaan.com",text)
+# print(match)
+
+#Split numbers
+
+'''import re
+text = "2005:04:23"
+lst = re.split(r"[-\:]", text)
+print(lst)'''
+
+# 1st Approach
+
+# import re
+# text = "9018880822 90198808"
+# regular = r"\d{10}"
+# list = re.search(regular,text)
+# print(list.group())
+
+# 2nd Approach
+
+'''import re
+text = "9018088221 87878787"
+p = re.compile(r"\d{10}")
+a = p.search(text)
+print(a.group())
+print(p.findall(text))'''
+
+# import re
+# text = ['9019880822',
+# '9945324556',
+# '9113571717',
+# '8660655063']
+
+# p = re.compile(r"\b\d{5}[02468]\d{4}\b")
+
+# for i in text:
+#     if p.search(i) != None:
+#         print(i,"Valid")
+#     else:
+#         print(i,"Invalid")
+
+# import re
+# text = ['9019880822',
+# '9945324556',
+# '9113571717',
+# '8660655063']
+
+# regu = r"\b\d{5}[24680]\d{4}\b"
+# match = re.match(regu,text)
+
+# for i in match:
+#     if i != None:
+#         print(i,"Valid")
+#     else:
+#         print(i,"invalid")
+
+# import re
+
+# text = ['9019880822',
+#         '9945324556',
+#         '9113571717',
+#         '8660655063']
+
+# regu = r"\b\d{5}[24680]\d{4}\b"
+# p = re.compile(regu)
+
+# for number in text:
+#     if p.fullmatch(number):
+#         print(number, "Valid")
+#     else:
+#         print(number, "Invalid")
+
+
+
+
+
+
 
 
 
