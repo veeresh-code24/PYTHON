@@ -1,100 +1,73 @@
-# l = []
-# print(type(l), l)
+# lst = [10,20,30,40,50]
+# print(lst)
 
-# l = [1,2,3,4]
-# print(l)
+# lst = ["iranna", 3, 3.333,False, "apple"]
+# print(lst)
 
+# lst1 = [10, [10,20,30],(40,50,60),{70,80,90},{"name":"iranna","age":21}]
+# print(lst1)
 
-# l = [1,8,10,7,4,2,1]
-# l.sort()
-# print(l)
-# l.sort(reverse=True)
-# print(l)
-# l.reverse()
-# print(l)
+# print(lst1[0])
+# print(lst1[1][2])
+# print(lst1[2][1])
+# # print(lst1[3][1])
+# print(lst1[4]["name"])
+# print(lst1[4]["age"])
 
-# square = []
-# for i in range(5):
-#     square.append(i**2)
-# print(square)
+# lst1 = [10,20,30]
+# lst2 = [40,50,60]
+# lst3 = lst2 + lst1
+# print(lst3)
 
-# square = [i**2 for i in range(5)]
-# print(square)
+# lst = [1]*10
+# print(lst)
 
-# square = [i for i in range(10) if i % 2 == 0]
-# print(square)
+# lst4 = [1,2,3,4]*4
+# print(lst4)
 
-# even = []
-# for i in range(10):
-#     even.append(i)
-
-
-# print(even)
-
-# l = [1,2,3,4,5,6]
-# print(l[0])
-# print(l[-1])
-
-# a = [10, 20, 30, 40, 50]
-# print(a[2])
-
-# b = ["apple", "banana"]
-# b.append("orange")
-# print(b)
-
-# c = list((1,2,3))
-# print(c)
-
-# nums = [10, 20, 25, 30]
-# print(25 in nums)
-
-# l = [5, 10, 15, 20]
-# l.insert(1,100)
-# print(l)
+'''lst = [10,20,30,40,50,60,70,80]
+print(lst)
+print(lst[0])
+print(lst[::])
+print(lst[::-1])
+print(lst[::2])
+print(lst[-2::-2])
+print(lst[-2:-8:-1])
+print(lst[7:1:-1])'''
 
 
-# l2 = [5, 10, 15, 20]
-# l2.remove(15)
-# print(l2)
+# lst = [10,20,30,40,50,60,70,80]
 
-# b = [1, 2, 3, 4, 5]
-# b.reverse()
-# print(b)
+# for i in range(0,8):
+#     print(lst[i])
 
-# a = [7, 1, 9, 3]
-# a.sort(reverse=True)
-# print(a)
+lst = [10,20,30,40,50]
+print(lst)
 
-# a = [2, 3, 2, 4, 5, 2]
-# print(a.count(2))
+# lst.append(40)
+# print(lst)
 
-# matrix = [[1,2,3], [4,5,6], [7,8,9]]
-# print(matrix[2][2])
+# lst.append([10,20,30])
+# print(lst)
 
-# l = []
-# for i in range(2,51):
-#     if i % 2 == 0:
-#         l.append(i)
-# print(l)
+# lst = lst + [10,20,30]
+# print(lst)
 
-# l = [10,20,30,40, 70, 60]
-# l2 = sorted(l)
-# print(l2[-2])
+lst.extend([10,20,30])
+print(lst)
 
-# y = [x for x in range(1,51) if x % 2 == 0]
-# print(y)
+lst.insert(2,99)
+print(lst)
 
-# x = [1,2,3,4]
-# y = [5,4,3,5]
-# for i in x:
-#     y.append(i)
-# print(y)
+lst.extend([10,20,30])
+print(lst)
 
-# s = ["http.com","http,com/","http.com"]
+lst[2] = 300
+print(lst)
 
-# for i in s:
-    # if i[0:4:] == "http":
-        # print(i)
-import sys
+lst = lst + [1,2,3]
+print(lst)
 
-print(sys.argv)
+
+
+
