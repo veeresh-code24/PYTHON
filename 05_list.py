@@ -95,7 +95,7 @@ print(lst)'''
 # print(lst)
 
 
-lst  = [10,20,30,40,50,30,40]
+# lst  = [10,20,30,40,50,30,40]
 # lst.pop(0)
 # print(lst)
 # del lst[-1:-7:-1]
@@ -104,7 +104,57 @@ lst  = [10,20,30,40,50,30,40]
 
 # print(lst)
 
-lst[2:6] = [4]
+# lst[2:6] = [4]
+# print(lst)
+
+
+
+# lst  = [10,20,30,40,50]
+# lst1 = lst[:]
+# print(lst)
+# print(lst1)
+# print(lst is lst1)
+
+# lst = [10,20,30,40,50]
+# lst1 = list(lst)
+# print(lst)
+# print(lst1)
+# print(lst is lst1)
+
+#  Shallow copy 
+
+'''lst = [[10,20],[30,40,50]]
+lst1 = list(lst)
 print(lst)
+print(lst1)
+print(lst is lst1)
+
+lst.append([60,70])
+print(lst)
+print(lst1)
+print(lst is lst1)
+
+lst[1][0] = 300
+print(lst)
+print(lst1)
+print(lst is lst1)'''
+
+# Deep copy
+import copy
+lst =  [10,[20,30],[40,50]]
+lst1 = copy.deepcopy(lst)
+print(lst)
+print(lst1)
+print(lst is lst1)
+
+lst.append([60,70])
+print(lst)
+print(lst1)
+
+lst[1][0] = 300
+print(lst)
+print(lst1)
+
+
 
 
