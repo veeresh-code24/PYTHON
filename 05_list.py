@@ -140,7 +140,7 @@ print(lst1)
 print(lst is lst1)'''
 
 # Deep copy
-import copy
+'''import copy
 lst =  [10,[20,30],[40,50]]
 lst1 = copy.deepcopy(lst)
 print(lst)
@@ -153,7 +153,19 @@ print(lst1)
 
 lst[1][0] = 300
 print(lst)
-print(lst1)
+print(lst1)'''
+
+lst = [10,20,30,40,50]
+# print(len(lst))
+# print(max(lst))
+# print(min(lst))
+# print(sum(lst))
+
+
+for i,j in enumerate(lst,start=00):
+    print(i,j) 
+
+
 
 
 
