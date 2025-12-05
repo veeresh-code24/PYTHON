@@ -1,3 +1,3 @@
-a = 10
-b = 20
-print(a+b)
+import ritesh
+# help(ritesh)
+print(ritesh.power_of.__doc__)
