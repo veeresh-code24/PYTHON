@@ -155,17 +155,56 @@ lst[1][0] = 300
 print(lst)
 print(lst1)'''
 
-lst = [10,20,30,40,50]
+# lst = [10,20,30,40,50]
 # print(len(lst))
 # print(max(lst))
 # print(min(lst))
 # print(sum(lst))
 
 
-for i,j in enumerate(lst,start=00):
-    print(i,j) 
+# for i,j in enumerate(lst,start=00):
+    # print(i,j) 
 
+# Built in methoda
 
+# lst = [10,20,30,40,50,20]
+# print(lst.count(20))
+# print(lst.index(20,2,6))
+# print(lst.index(20))
+# lst.clear()
+# print(lst)
+
+# lst = [12,88,2,101,950,20]
+# lst = sorted(lst,reverse=True)
+# print(lst)
+# lst.sort(reverse=True)
+# print(lst)
+
+# lst = list(reversed(lst))
+# print(lst)
+# lst.reverse()
+# print(lst)
+
+# lst = sorted(lst, reverse=True)
+# print(lst)
+
+# PROGRAM TO FIND THE THE SUBLIST
+
+'''lst = input("Enter a list between[]\n")
+lst = eval(lst)
+
+start = int(input("Enter your starting index\n "))
+stop = int(input("Enter your ending index\n "))
+
+print(sum(lst[start:stop+1]))'''
+
+lst = [10,20,30,40,50]
+lst1 = [10,20,30,80,88,28,38]
+
+for i in lst1:
+    if i not in lst:
+        lst.append(i)
+print(lst)
 
 
 
