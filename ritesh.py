@@ -16,3 +16,8 @@ def quotient_of(num,deno):
     return c
 r = quotient_of(5,200)
 print(r)
+
+
+s = input("Enter your expression\n")
+s = eval(s)
+print(s)

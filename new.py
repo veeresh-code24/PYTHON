@@ -1,26 +1,25 @@
-# import ritesh
-# def remainder(a,b):
-#     "'this calculate the two variables"
-#     "between the remainder result"
-#     c = a%b
-#     print(c)
-# remainder(100,6)
-
-# ritesh.power_of(100,2)
-# ritesh.get_quotient(50,2)
-
-import ritesh
-def quotient_of(numerator,denomiator):
-    '''this calculate will do reult of 
-    numerator divided by dinomenator'''
-
-    result = numerator/denomiator
-    return result
-
-print(quotient_of(200,6))
+def add(a,b):
+    '''this two number adding 
+    giving a result'''
+    c = a+b
+    print(c)
 
 
+def num(a,b):
+    '''this two number adding 
+    giving a result'''
+    c = a/b
+    print(c)
 
 
+def main():
+    add(5,2)
+    num(100,2)
 
 
+if __name__ == "__main__":
+    add(5,2)
+    num(100,2)
+
+
+    
