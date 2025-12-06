@@ -106,9 +106,58 @@
 # print(result2(10))
 
 
-def fun(num):
-    return lambda x : num * x
-math_table = fun(5)
+# def fun(num):
+#     return lambda x : num * x
+# math_table = fun(5)
 
-for i in range(1,11):
-    print("5 X" , i , "=", math_table((i)) )
+# for i in range(1,11):
+#     print("5 X" , i , "=", math_table((i)) )
+
+# a = (lambda a,b : a+b)(2,5)
+# print(a)
+
+# fun = (lambda  a,b:a+b)
+# res = fun(10,2)
+# print(res)
+
+# res1 = fun(100,2)
+# print(res1)
+
+# res2 = fun(100,100)
+# print(res2)
+
+
+# lst = [10,20,12,3,7,17,19,28]
+
+# def call(x):
+#     if x % 2 != 0:
+#         return True
+#     else:
+#         return False
+# even_lst = list(filter(call,lst))
+# print(even_lst)
+
+# even_lst = list(filter(lambda x : x%2!=0,lst))
+# print(even_lst)
+
+# from functools import reduce
+lst = [10,20,12,3,7,17,19,28]
+
+
+# def call(a,b):
+#     return a+b
+
+# res = reduce(call,lst)
+# print(res)
+
+# x = reduce(lambda x,y : x+y,lst)
+# print(x)
+
+def call(a):
+    if a % 2 == 0:
+        return True
+    else:
+        return False
+
+res = list(map(call,lst))
+print(res)
