@@ -1,119 +1,54 @@
-'''list = ["apple", "banana", "cherry"]
-for i in list:
-    print(i)'''
+# lst = [10,20,30,40,50]
 
-'''print(list(range(5)))
+# for i in range(len(lst)):
+#     print(lst)
 
-number = list(range(10))
+# print(list(range(2,10)))
 
-for i in number:
-    print("i=", i, "numbers=", number)'''
+# print(list(range(10)))
 
-'''name = ["Iranna", "pacchu", "veeresh","hari"]
-age = [21, 22,23,24]
+# balance = 15000
+# min_balance = 500
+# print("Before valance:",balance)
 
-for name, index in enumerate(name,start=1):
-    print(name,index)'''
+# while balance > min_balance:
+#     balance -= 1000
 
-
-# for name,age in zip(name,age):
-    # print(name,age)
-
-# a = [1,2,3,4,5,6,7,8,99]
-# total = a[0]
-
-# for i in a:
-#     if i > total:
-#         total = i
-# print(total)
-
-# import math
-
-# s = "{:<10.5f}".format(math.pi)
-# print(s)
-
-# s = 5321000000000000000000
-
-# a = "{:.1e}".format(s)
-# print(a)
-
-# s = "{0[1]} {0[0]} {0[2]}".format([10,20,30])
-# print(s)
-
-# n = 1
-# total = 0
-
-# while total < 10:
-#     total += 1
-#     n += 1
-# print(total)
-
-n = 1
-total = 0
-while total < 8:
-    total += n
-    n += 1
-print(total)
-
-# lst = [1,2,3,4,5,6,7,1]
-
-# print(min(lst))
+# print(balance)
 
 
-# n = input("Enter your number: ")
+# balance = 15000
+# min_balance = 500
+# print("Before valance:", balance)
 
-# s = max(map(int, n))
-# print(s)
+# while balance > min_balance:
+#     balance -= 1000
+#     print("After subtract:", balance)
 
-'''password = 123
+# print("Final:", balance)
 
-while True:
-    guess_password = int(input("Enter your password\n"))
-    if password == guess_password:
-        print("Your password is correct")
+
+n = int(input("Enter your number\n"))
+
+for i in range(2,n+1):
+    if n % i == 0:
         break
-    else:
-        print("Wrong password!")'''
+if i == n:
+    print("it's a prime")
+else:
+    print("It;s not a prime")
 
-i = 1
-while i<51:
-    if i == 21:
-        i += 1
+
+
+even_sum,odd_sum = 0,0
+n = int(input("Enter your number\n"))
+
+for i in range(1,n+1):
+    if i % 2 == 0:
+        even_sum+= i
         continue
-    print(i)
-    i += 1
 
-'''sum_tot = 0
+    odd_sum += i
 
-for i in range(1,11):
-    sum_tot += i
-print(sum_tot)'''
-
-lst = [1,2,3,33,4,5,6,7,22,]
-
-largest = 0
-for i in lst:
-    largest += i
-        
-
-print(largest)
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-
-
+print(even_sum,"even_number")
+print(odd_sum,"Odd number")
