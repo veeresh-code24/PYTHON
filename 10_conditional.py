@@ -195,10 +195,48 @@
 #     print(i)
 #     i += 1
 
-n = int(input("Enter tour number\n"))
+# n = int(input("Enter tour number\n"))
 
-if n%2 == 0:
-    print(n, "is even number")
+# if n%2 == 0:
+#     print(n, "is even number")
 
+# else:
+#    print(n, "odd number")
+
+# if False:
+#     print("Condition true")
+# else:
+#     print("Condition False")
+
+# n = int(input("Enter your number\n"))
+
+# if n%2 == 0:
+#     print("Even number")
+# else:
+
+#     print("Odd number")
+
+# a = int(input("Enter your number of a \n"))
+# b = int(input("Enter your number of b\n"))
+# c = int(input("Enter your number of c\n"))
+
+# if a>b and a>c:
+#     print("A is the largest number")
+# elif b>a and b>c:
+#     print("Bis the largest number")
+# else:
+#     print("C is the largest number")
+
+# n = int(input("Enter youe number"))
+
+# if n %2 == 0 or n % 5 == 0:
+#     print("It is divisible by 2 neither 5")
+# else:
+#     print("It's a not divisible neither 3 or 5")
+
+n = int(input("Enter your number\n:"))
+
+if not n % 2 == 0:
+    print("even number")
 else:
-   print(n, "odd number")
+    print("odd number")
