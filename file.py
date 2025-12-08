@@ -50,3 +50,40 @@
 #     print("It's a True")
 # else:
 #     print("It's a False")
+
+
+# Store the voters who already voted
+voted_list = set()  
+
+def cast_vote(voter_id):
+    # Check if voter already voted
+    if voter_id in voted_list:
+        print("❌ You have already voted! Duplicate vote detected.")
+    else:
+        print("✔ Vote submitted successfully.")
+        voted_list.add(voter_id)
+
+# -------------------------------
+# Testing the program
+# -------------------------------
+
+# First time voting
+cast_vote("1001")  
+# Output: ✔ Vote submitted successfully.
+
+# Same voter tries again
+cast_vote("1001")  
+# Output: ❌ You have already voted! Duplicate vote detected.
+
+# Another voter
+cast_vote("1002")
+# Output: ✔ Vote submitted successfully.
+
+
+def fun(num):
+    return lambda x : x*num
+
+res = int(input("Enter your number\n"))
+
+print(res)
+
