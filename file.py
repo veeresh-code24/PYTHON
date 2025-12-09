@@ -87,3 +87,10 @@ res = int(input("Enter your number\n"))
 
 print(res)
 
+def sud_info(name,*details,add="aaa"):
+    print(details)
+    print(name)
+    print(add)
+
+sud_info("iranna",21,"veeresh","iranna","aaa")
+
