@@ -198,14 +198,37 @@ stop = int(input("Enter your ending index\n "))
 
 print(sum(lst[start:stop+1]))'''
 
-lst = [10,20,30,40,50]
-lst1 = [10,20,30,80,88,28,38]
+# lst = [10,20,30,40,50]
+# lst1 = [10,20,30,80,88,28,38]
 
-for i in lst1:
-    if i not in lst:
-        lst.append(i)
+# for i in lst1:
+#     if i not in lst:
+#         lst.append(i)
+# print(lst)
+
+lst2 = [10,20,30,40,50]
+lst1 = [50,40,30,20,10,8]
+
+# for i in lst1:
+#     if i not in lst2:
+#         lst2.append(i)
+# print(lst2)
+
+# for i in lst2:
+#     if i not in lst1:
+#         lst1.append(i)
+# print(lst1)
+# print(lst2)
+
+lst = eval("Enter a sorted list between []\n")
+n = int("Enter your value to be inserted\n")
+
+for i in range(len(lst)):
+    if n<lst(i):
+        lst.insert(i,n)
+        break
 print(lst)
-
+    
 
 
 
