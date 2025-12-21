@@ -239,9 +239,124 @@ lst1 = [50,40,30,20,10,8]
 # print(lst)
 
 
-lst = [1,2,3,4,5,6,7]
+# lst = [1,2,3,4,5,6,7]
 
-print(sum(lst)-min(lst), sum(lst)-max(lst))
+# print(sum(lst)-min(lst), sum(lst)-max(lst))
+
+# s = input("Enter your expression brackets\n")
+
+# lst = []
+
+# for i in s:
+#     if i == "[" or i == "{" or i == "(":
+#         lst.append(i)
+
+#     elif i == "]" and lst[-1] == "[":
+#         lst.pop()
+
+#     elif i == "}" and lst[-1] == "{":
+#         lst.pop()
+
+#     elif i == ")" and lst[-1] == "(":
+#         lst.pop()
+
+#     else:
+#         break
+# if len(lst) == 0:
+#     print(s,"It's a balnance expression")
+# else:
+#     print(s,"It's not a balance")
+
+# s = input("Enter your expression brackets\n")
+# lst = []
+# balance = True
+
+# for i in s:
+#     if i == "{" or i == "[" or i == "(":
+#         lst.append(i)
+
+#     elif i == "}":
+#         if lst and lst[-1] == "{":
+#             lst.pop()
+#         else:
+#             balance = False
+#             break
+#     elif i == "]":
+#         if lst and lst[-1] == "[":
+#             lst.pop()
+#         else:
+#             balance = False
+#             break
+#     elif i == ")":
+#         if lst and lst[-1] == "(":
+#             lst.pop()
+#         else:
+#             balance = False
+#             break
+
+# if balance and len(lst) == 0:
+#     print("It's balance")
+# else:
+#     print("It's not  balance")
+
+# s = input("Enter your expression between\n")
+
+# lst = []
+
+# for i in s:
+#     if i == "{" or i == "(" or i == "[":
+#         lst.append(i)
+
+#     elif i == "}" and lst[-1] == "{":
+#         lst.pop()
+    
+#     elif i == ")" and lst[-1] == "(":
+#         lst.pop()
+    
+#     elif i == "]" and lst[-1] == "[":
+#         lst.pop()
+    
+#     else:
+#         break
+
+# if len(lst) == 0:
+#     print("it's balance")
+# else:
+#     print("it's not a balance")
+
+# lst1 = [1,3,1,5]
+# lst2 = [4,]
+# print(lst1 < lst2)
+
+lst = [2,4,6,8,10,2,4,81,3,7,9]
+
+# s_lst = []
+
+# for i in lst:
+    # s_lst.append(i**2)
+# print(lst)
+# print(s_lst)
+
+# s = dict(map(lambda x : x**2,lst))
+# print(s)
+
+# sq_lst = [i**2 for i in lst]
+# print(sq_lst)
+
+# sq_lst = [i**2 for i in lst if i%2 == 0]
+# print(sq_lst)
+
+lst1 = ["name","age","Branch"]
+lst2 = ["iranna",21,"Enginee"]
+# print(list(zip(lst1,lst2)))
+# print(list(zip(lst1,lst2)))
+
+for i,j in enumerate(lst1,start=1):
+    print(i,j) 
+
+
+
+    
 
     
 
