@@ -220,15 +220,29 @@ lst1 = [50,40,30,20,10,8]
 # print(lst1)
 # print(lst2)
 
-lst = eval("Enter a sorted list between []\n")
-n = int("Enter your value to be inserted\n")
+# lst = eval("Enter a sorted list between []\n")
+# n = int("Enter your value to be inserted\n")
 
-for i in range(len(lst)):
-    if n<lst(i):
-        lst.insert(i,n)
-        break
-print(lst)
+# for i in range(len(lst)):
+#     if n<lst(i):
+#         lst.insert(i,n)
+#         break
+# print(lst)
+
+# lst = eval(input("Enter your sorted list between[]\n" ))
+# n = int(input("Enter your value to be inserted\n"))
+
+# for i in range(len(lst)):
+#     if n < lst[i]:
+#         lst.insert(i,n)
+#         break
+# print(lst)
+
+
+lst = [1,2,3,4,5,6,7]
+
+print(sum(lst)-min(lst), sum(lst)-max(lst))
+
     
-
 
 
