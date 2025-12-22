@@ -381,8 +381,8 @@ lst = [2,4,6,8,10,2,4,81,3,7,9]
 
 # print(''.join([lst[i].lower() if len(lst[i]) > 5 else lst[i].upper() for i in range(len(lst))]))
 
-s = input("Enter your string\n")
-lst = s.split()
+# s = input("Enter your string\n")
+# lst = s.split()
 
 # res = []
 # for i in range(len(lst)):
@@ -392,7 +392,32 @@ lst = s.split()
 #         res.append(lst[i].upper())
 # print(' '.join(res))
 
-print(' '.join([lst[i].lower() if len(lst[i]) > 5 else lst[i].upper() for i in range(len(lst))]))
+# print(' '.join([lst[i].lower() if len(lst[i]) > 5 else lst[i].upper() for i in range(len(lst))]))
+
+'''lst = [10,20,30,40,50]
+print(lst)
+
+lst = ["python", 23,False, 1.222,1+3j]
+print(lst)'''
+
+# lst = [10,[10,20,30],(10,20,30),{1,2,3},{1:"x",2:"y"}]
+# print(lst)
+
+# print(lst[4][2])
+
+# lst = [1,2,3] * 101
+# print(lst)
+
+# lst = [1,2,3]
+# lst1 = [4,5,6]
+# print(lst1+lst) 
+
+lst = [10,20,30,40,50,60]
+# print(lst[0:6:-1]
+
+for i in range(len(lst)):
+    print(lst[i])
+
 
 
 
