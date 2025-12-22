@@ -328,7 +328,7 @@ lst1 = [50,40,30,20,10,8]
 # lst2 = [4,]
 # print(lst1 < lst2)
 
-lst = [2,4,6,8,10,2,4,81,3,7,9]
+# lst = [2,4,6,8,10,2,4,81,3,7,9]
 
 # s_lst = []
 
@@ -441,26 +441,67 @@ print(lst)'''
 # print(lst)
 
 
-lst = [10,20,30,40,50,30]
-print(lst)
-lst.remove(30)
-print(lst)
+# lst = [10,20,30,40,50,30]
+# print(lst)
+# lst.remove(30)
+# print(lst)
 
 # while 30 in lst:
 #     lst.remove(30)
 # print(lst)
 
-print(30 in lst)
-print(30 not in lst)
-print(60 not in lst)
+# print(30 in lst)
+# print(30 not in lst)
+# print(60 not in lst)
 
+# lst = [10,20,30,40,50]
+# lst.pop(2)
+# print(lst)
+# print(lst)
+# print(lst.pop(1))
+# print(lst)
 
+# del lst[::1]
+# print(lst)
 
+# lst.clear()
+# print(lst)
+# print(lst)
 
+# lst1 = [10,20,30,40,50]
+# lst2 = lst1[:]
+# print(lst1)
+# print(lst2)
+# print(lst1 is lst2)
 
+# lst1 = [10,20,30,40,50]
+# lst2 = list(lst1)
+# print(lst1)
+# print(lst2)
+# print(lst1 is lst2)
+# print(id(lst1))
+# print(id(lst2))
 
+# lst1 = [10,20,30,40,50]
+# lst2 = lst1
+# print(lst1)
+# print(lst2)
+# print(lst1 is lst2)
+# print(id(lst1))
+# print(id(lst2))
 
-     
+lst1 = [[10,20],[30,40]]
+lst2 = list(lst1)
+print(lst1)
+print(lst2)
+print(lst1 is lst2)
+lst1.append([50,60])
+print(lst1)
+print(lst2)
+lst1[1][0] = 300
+print(lst1)
+print(lst2)
+
 
     
 
