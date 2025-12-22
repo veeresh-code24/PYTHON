@@ -412,11 +412,48 @@ print(lst)'''
 # lst1 = [4,5,6]
 # print(lst1+lst) 
 
-lst = [10,20,30,40,50,60]
+# lst = [10,20,30,40,50,60]
 # print(lst[0:6:-1]
 
-for i in range(len(lst)):
-    print(lst[i])
+# for i in range(len(lst)):
+    # print(lst[i])
+
+# lst = [10,20,30,40,50,30]
+'''lst.append([60,70,80])
+print(lst)
+lst = lst + [60,70,80]
+print(lst)
+lst.extend([10,20,30])
+print(lst)'''
+
+# lst.insert(2,999)
+# print(lst)
+# lst.insert(2,299)
+# print(lst)
+
+# lst[4] = 300
+# print(lst)
+
+# lst[::2] = [100,100,100]
+# print(lst)
+
+# lst[::] = [22]
+# print(lst)
+
+
+lst = [10,20,30,40,50,30]
+print(lst)
+lst.remove(30)
+print(lst)
+
+# while 30 in lst:
+#     lst.remove(30)
+# print(lst)
+
+print(30 in lst)
+print(30 not in lst)
+print(60 not in lst)
+
 
 
 
