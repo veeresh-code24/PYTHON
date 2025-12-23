@@ -490,17 +490,52 @@ print(lst)'''
 # print(id(lst1))
 # print(id(lst2))
 
-lst1 = [[10,20],[30,40]]
-lst2 = list(lst1)
-print(lst1)
-print(lst2)
-print(lst1 is lst2)
-lst1.append([50,60])
-print(lst1)
-print(lst2)
-lst1[1][0] = 300
-print(lst1)
-print(lst2)
+# lst1 = [[10,20],[30,40]]
+# lst2 = list(lst1)
+# print(lst1)
+# print(lst2)
+# print(lst1 is lst2)
+# lst1.append([50,60])
+# print(lst1)
+# print(lst2)
+# lst1[1][0] = 300
+# print(lst1)
+# print(lst2)
+
+# import copy
+# lst1 = [[10,20],[30,40]]
+# lst2 = copy.deepcopy(list(lst1))
+# print(lst1)
+# print(lst2)
+# print(lst1 is lst2)
+# lst1.append([50,60])
+# print(lst1)
+# print(lst2)
+# print(lst1 is lst2)
+# lst1[1][0] = 300
+# print(lst1)
+# print(lst2)
+# print(lst1 is lst2)
+
+lst = [10,20,30,40,50,60,70,80,20,30,30,30]
+# print(len(lst))
+# print(max(lst))
+# print(min(lst))
+# print(sum(lst))
+# print(lst.count(30))
+# print(lst.index(30,0,21))
+
+# lst = sorted(lst,reverse= True)
+# print(lst)
+
+# lst.sort(reverse=False)
+# print(lst)
+
+# lst = tuple(reversed(lst))
+# print(lst)
+
+lst.reverse()
+print(lst)
 
 
     
