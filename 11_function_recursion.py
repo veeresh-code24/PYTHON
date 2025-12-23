@@ -86,12 +86,12 @@ stu_info(2025,name= "iranna",age=21, city= "vijayapura",branch="engineering")'''
 
 # a = add(24,2,3,4,5,6,c=6)
 
-def sud_info(name,*details,add="aaa"):
-    print(details)
-    print(name)
-    print(add)
+# def sud_info(name,*details,add="aaa"):
+#     print(details)
+#     print(name)
+#     print(add)
 
-sud_info("iranna",21,"veeresh","iranna","aaa")
+# sud_info("iranna",21,"veeresh","iranna","aaa")
 
 
 
