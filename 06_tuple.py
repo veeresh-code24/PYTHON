@@ -175,3 +175,6 @@
 # f[4]= [100,12]
 # print(f)
 
+lst1 = ["i","am","go","bo"]
+lst2 = ["","","od","y"]
+print(" ".join([i+j for i,j in zip(lst1,lst2)]))

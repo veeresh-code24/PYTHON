@@ -266,7 +266,55 @@ if len(lst) == 0:
 else:
     print("Parenthesis are not equal")'''
 
-lst1 = [11,2,3,4]
-lst2 = [12]
-print(lst1 < lst2)
+# lst1 = [11,2,3,4]
+# lst2 = [12]
+# print(lst1 < lst2)
 
+# lst = [1,2,3,4,5,6,7,8]
+
+# sq_lst = []
+
+# for i in lst:
+#     if i%2 == 0:
+#         sq_lst.append(i**2)
+# print(lst)
+# print(sq_lst)
+
+# lst = [1,2,3,4,5,6,7,8]
+# sq_lst = [i**2 for i in lst]
+# print(sq_lst)
+
+# sq_lst = [i**2 for i in lst if i%2 ==0]
+# print(sq_lst)
+
+# lst1  = [1,2,3,4,5]
+# lst2 = [1,1,1,1,1]
+
+# print(list(zip(lst1,lst2)))
+
+# for i,j in zip(lst1,lst2):
+#     print(i,j)
+
+# lst1 = ["i","am","go","bo"]
+# lst2 = ["","","od","y"]
+
+# res = []
+# for i,j in zip(lst1,lst2):
+#     res.append(i+j)
+# print(" ".join(res))
+
+# print(" ".join([i+j for i,j in zip(lst1,lst2)]))
+
+# print(" ".join([i+j for i,j in zip(lst1,lst2)]))
+
+str = input("Enter your string\n").split()
+
+# res = []
+# for i in range(len(str)):
+#     if len(str[i]) > 5:
+#         res.append(str[i].lower())
+#     else:
+#         res.append(str[i].upper())
+# print(' '.join(res))
+
+print(' '.join([str[i].lower() if len(str[i]) > 5 else str[i].upper() for i in range(len(str))]))
