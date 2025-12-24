@@ -307,7 +307,7 @@ else:
 
 # print(" ".join([i+j for i,j in zip(lst1,lst2)]))
 
-str = input("Enter your string\n").split()
+# str = input("Enter your string\n").split()
 
 # res = []
 # for i in range(len(str)):
@@ -317,4 +317,11 @@ str = input("Enter your string\n").split()
 #         res.append(str[i].upper())
 # print(' '.join(res))
 
-print(' '.join([str[i].lower() if len(str[i]) > 5 else str[i].upper() for i in range(len(str))]))
+# print(' '.join([str[i].lower() if len(str[i]) > 5 else str[i].upper() for i in range(len(str))]))
+
+lst = [10,20,30,0,50]
+
+if all(lst):
+    print("True")
+else:
+    print("False")
