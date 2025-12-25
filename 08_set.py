@@ -34,9 +34,75 @@ print(hash(999))'''
 
 # s = {"python"}
 # print(s)
-print(hash("python"))
+# print(hash("python"))
 
-print(hash(99999))
+# print(hash(99999))
+
+
+# s1 = {1,2,3,4,5,6,7,8}
+# s2 = {6,7,8,9,0,10,20,30}
+# s3 = s1 | s2
+# print(s3)
+# s3 = s1.union(s2)
+# print(s3)
+
+# s4 = s1 & s2
+# print(s4)
+# s3 = s1.intersection(s2)
+# print(s3)
+
+# s4 = s2 - s1
+# print(s4)
+# s3 = s1.difference(s2)
+# print(s3)
+
+# s3 = s1 ^ s2
+# print(s3)
+# s3 = s1.symmetric_difference(s2)
+# print(s3)
+# print(s1)
+# print(s1.intersection(s2))
+# print(s1)
+
+# print(s1)
+# s1.intersection_update(s2)
+# print(s1)
+
+# print(s1)
+# print(s1.difference(s2))
+# print(s1)
+
+# print(s1)
+# s1.difference_update(s2)
+# print(s1)
+
+# print(s1)
+# print(s1.symmetric_difference(s2))
+# print(s1)
+
+# print(s1)
+# s1.symmetric_difference_update(s2)
+# print(s1)
+
+s1 = {1,2,3,4,99}
+s2 = {1,2,3,4,5,6,78,9,10,11,12}
+# print(s1.issubset(s2))
+# print(s2 <= s1)
+
+# print(s2.issuperset(s1))
+# print(s2 >= s1)
+# print(s1 <= s2)
+
+
+# print(s1.isdisjoint(s2))
+
+print(s2.issuperset(s1))
+print(s1 <= s2)
+
+
+
+
+
 
 
 
