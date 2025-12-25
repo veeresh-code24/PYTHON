@@ -1,90 +1,45 @@
-# s = {1,2,3,3,2}
+# set = set()
+# print(set,type(set))
+
+# s = {1,2,3,2,1,23,32,1,23,2,1,333,2,12}
 # print(s)
 
-# s = {10, 20, 30}
-# s.add(40)
-# s.add(20)
+# s = {1,3.333,False,'Python',(1,2,3)}
 # print(s)
 
-# a = {1,2,3}
-# b = {3,4,5}
-
-# print(a & b)
-# print(a | b)
-# print(a ^ b)
-
-
-# s = {1, 2, [3, 4]}
+# s = {{1,2,3},[1,2,3],{1:"x",2:"y"}}
 # print(s)
 
-# x = {10, 20, 30}
-# print(x.pop())
-# print(x)
-
-
-# s = set()
-# s.add("apple")
-# s.add("apple")
-# print(len(s))
-
-
-# a = {10, 20, 30}
-# b = {20, 40}
-# print(a-b)
-# print(b-a)
-
-# s = {1,2,3}
-# s.remove(4)
+# s= {(1,2,3),"python"}
 # print(s)
 
-# s = {1,2,3}
-# s.discard(4)
+'''s = {21,23,12,12,1,21,23,44,56,54,45,32,999}
+print(s)
+s.add(999)
+print(s)
+s.add(999)
+print(s)
+s.remove(32)
+print(s)
+s.discard(999)
+print(s)
+s.discard(111)
+print(s)
+s.pop()
+print(s)
+print(s.pop())
+s.update({1,2,3,4,5,6,7,8,8,66,5,3,3,2,21,34,67,89,0,8,7})
+print(s)
+print(hash(999))'''
+
+# s = {"python"}
 # print(s)
+print(hash("python"))
 
-# s1 = {1,2,3,4}
-# s2 = s1
-# s2.add(5)
-# print(s1)
-
-# s = set("banana")
-# print(s)
-
-# a = {1,2,3}
-# b = {3,4,5}
-# a.update(b)
-# print(a)
-
-# s = {10, 20, 30}
-# print(25 in s)
-# print(20 in s)
-
-# x = {}
-# print(type(x))
-
-# a = frozenset([1,2,3,4])
-# s = {a, 4}
-# print(s)
-
-# s = {"banana"}
-# print(s)
-
-# s = {10, 20, 30}
-# s.add(40)
-# s.add(20)
-# print(s)
-
-# s = {1, 2, [3, 4]}
-# print(s)
-
-# s1 = {1, 2, 3}
-# s2 = s1
-
-# s2.add(4)
-# print(s1)
+print(hash(99999))
 
 
-# dicti={"name":"chandresh","roll":0,"cast":"moger"}
 
 
-# lst=**dicti
+
 

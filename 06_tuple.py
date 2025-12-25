@@ -175,6 +175,24 @@
 # f[4]= [100,12]
 # print(f)
 
-lst1 = ["i","am","go","bo"]
-lst2 = ["","","od","y"]
-print(" ".join([i+j for i,j in zip(lst1,lst2)]))
+# tup = (10,20,30)
+# print(tup,type(tup))
+
+# tup = (10,False, "iranna", 3.333)
+# print(tup)
+
+# tup = ()
+# print(type(tup),tup)
+
+# tup = tuple()
+# print(type(tup),tup)
+
+# tup = (1,)
+# print(type(tup),tup)
+
+# tup = 10,20,30
+# print(tup,type(tup))
+
+tup = 10,20,30
+print(tup)
+
