@@ -84,8 +84,8 @@ print(hash(999))'''
 # s1.symmetric_difference_update(s2)
 # print(s1)
 
-s1 = {1,2,3,4,99}
-s2 = {1,2,3,4,5,6,78,9,10,11,12}
+# s1 = {1,2,3,4,99}
+# s2 = {1,2,3,4,5,6,78,9,10,11,12}
 # print(s1.issubset(s2))
 # print(s2 <= s1)
 
@@ -96,9 +96,18 @@ s2 = {1,2,3,4,5,6,78,9,10,11,12}
 
 # print(s1.isdisjoint(s2))
 
-print(s2.issuperset(s1))
-print(s1 <= s2)
+# print(s2.issuperset(s1))
+# print(s1 <= s2)
 
+# lst = input("Enter your string\n").split()
+
+# lst2 = set(lst)
+# print(lst2)
+
+lst = list(map(int,input("Enter your list number").split() ))
+
+s = set(lst)
+print(len(lst)-len(s))
 
 
 
