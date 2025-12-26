@@ -104,11 +104,21 @@ print(hash(999))'''
 # lst2 = set(lst)
 # print(lst2)
 
-lst = list(map(int,input("Enter your list number").split() ))
+# lst = list(map(int,input("Enter your list number").split() ))
 
-s = set(lst)
-print(len(lst)-len(s))
+# s = set(lst)
+# print(len(lst)-len(s))
 
+# lst = list(map(int,input("Enter your list number").split() ))
+
+# s = set(lst)
+# print(len(lst)-len(s))
+
+
+
+a = 10
+b = 5
+print(a+b)
 
 
 
