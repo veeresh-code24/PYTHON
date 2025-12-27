@@ -116,10 +116,14 @@ print(hash(999))'''
 
 
 
-a = 10
-b = 5
-print(a+b)
+# a = 10
+# b = 5
+# print(a+b)
 
+a = 10
+b = 20
+c = 30
+print(a+b+c)
 
 
 
