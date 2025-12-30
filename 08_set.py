@@ -132,17 +132,26 @@ print(hash(999))'''
 # res = {i**2 for i in s}
 # print(res)
 
-s = {2,3,4,5,6,7,8,9,10}
-res = set()
-for i in s:
-    if i % 2 == 0:
-        res.add(i**2)
-    else:
-        res.add(i+i)
-print(res)
+# s = {2,3,4,5,6,7,8,9,10}
+# res = set()
+# for i in s:
+#     if i % 2 == 0:
+#         res.add(i**2)
+#     else:
+#         res.add(i+i)
+# print(res)
 
-res = {i**2 if i%2==0 else i+i for i in s}
-print(res)
+# res = {i**2 if i%2==0 else i+i for i in s}
+# print(res)
+
+a = 10
+b = 20
+print(a+b)
+
+
+
+
+
 
 
 
