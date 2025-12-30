@@ -115,20 +115,34 @@ print(hash(999))'''
 # print(len(lst)-len(s))
 
 
+# List comprehension
 
-# a = 10
-# b = 5
-# print(a+b)
+# s = {1,2,3,4,5,6,7,8,9}
+# res = set()
 
-a = 10
-b = 20
-c = 30
-print(a+b+c)
+# for i in s:
+#     if i % 2 == 0:
+#         res.add(i**2)
 
+# print(res)
 
+# res = {i**2 for i in s if i % 2 == 0}
+# print(res)
 
+# res = {i**2 for i in s}
+# print(res)
 
+s = {2,3,4,5,6,7,8,9,10}
+res = set()
+for i in s:
+    if i % 2 == 0:
+        res.add(i**2)
+    else:
+        res.add(i+i)
+print(res)
 
+res = {i**2 if i%2==0 else i+i for i in s}
+print(res)
 
 
 
