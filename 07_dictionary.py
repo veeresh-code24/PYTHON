@@ -46,6 +46,71 @@ print(d)'''
 # d.popitem()
 # print(d)
 
+d = {1:'a',2:[10,20,30] }
+print(d[1])
+
+# x = "a"
+# print(x)
+# print(d[1])
+
+# x = "b"
+# print(x)
+# print(d[1])
+# print(x)
+
+# print(d[1])
+
+# print(d[2])
+
+# l = d[2]
+# print(l)
+
+# l = d[2]
+# print(l)
+
+# print(d[2])
+
+# d = {1:'c', 2:'java',3:'python'}
+# print(list(d.items()))
+
+# for i,j in d:
+#     print(i,j)
+
+
+# s = input("Enter your word\n")
+# d = {}
+
+# for i in s:
+#     if i not in d:
+#         d[i] = 1 
+#     else:
+#         d[i] += 1
+# for i in d.keys():
+#     if d[i] >= 3:
+#         print(i)
+
+# s = input("enter a word").upper()
+
+# d = {}
+
+# for i in s:
+#     if i not in d:
+#         d[i] = 1
+#     else:
+#         d[i] += 1
+# for i in d.keys():
+#     if d[i] >= 3:
+#         print(i) 
+
+s = list(map(int, input("Enter a number").split()))
+d = {}
+
+for i in s:
+    if i not in d:
+        d[i] = 1
+    else:
+        d[i] += 1
+print(d)
 
 
 
