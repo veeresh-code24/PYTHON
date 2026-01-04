@@ -181,10 +181,50 @@ for i in d:
 
         # iranna'''
 
-str1 = "123"
-str1 = "c"
-print(str1)
+# str1 = "123"
+# str1 = "c"
+# print(str1)
 
+# import re
+# s = input("Enter a sentence\n")
+# s = re.sub(r'[.,?!]', '', s)
+# lst = s.split()
+
+# d = {}
+# for i in lst:
+#     if i in d:
+#         d[i] = 1
+#     else:
+#         d[i] += 1
+# for i in d:
+#     if d[i] >= 3:
+#         print(i)
+# import re
+# s = input().upper()
+# s = re.sub(r"[.,?!]", "", s)
+# lst = s.split()
+# d = {}
+
+# for i in lst:
+#     if i not in d:
+#         d[i] = 1
+#     else:
+#         d[i] += 1
+# for i in d:
+#     if d[i] >= 3:
+#         print(i)
+
+
+s = input().split(',')
+d = {}
+for i in s:
+    t = i.split()
+    if t[0] not in d:
+        d[t[0]] = t[1]
+    else:
+        if t[1] > t[0]:
+            d[t[0]] = t[1]
+print(d)
 
 
 
