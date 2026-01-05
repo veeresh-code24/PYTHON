@@ -319,9 +319,9 @@ else:
 
 # print(' '.join([str[i].lower() if len(str[i]) > 5 else str[i].upper() for i in range(len(str))]))
 
-lst = [10,20,30,0,50]
+lst = [10,20,30,67,50]
 
-if all(lst):
+if any(lst):
     print("True")
 else:
     print("False")
