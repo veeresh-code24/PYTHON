@@ -157,13 +157,36 @@ class Cricket:
         print(self.score)
         print(self.age)
         print(self.jersay_no)
+        print(self.food)
+        print(self.ride)
 
 def main():
     vir = Cricket('Dhoni','CSK',12000)
+
+    vir.age = 35
+    vir.jersay_no = 18
+
+    setattr(vir,'food','veg')
+    setattr(vir,'ride','bike')
+
+    print(getattr(vir,'name'))
+    print(getattr(vir,'age'))
+
+    print(hasattr(vir,'name'))
+    print(hasattr(vir,'male'))
+
+    print(vir.__dict__)
+    print(vir.jersay_no)
+    print(vir.__dict__['name'])
+
+
+
+
+    vir.display()
     # vir.age = 54
     # vir.jersay_no = 7
-    setattr(vir,'age',37)
-    setattr(vir,'jersay_no',47)
+    # setattr(vir,'age',37)
+    # setattr(vir,'jersay_no',47)
 
     # print(getattr(vir,'name'))
     # print(vir.name)
@@ -171,9 +194,9 @@ def main():
     # print(hasattr(vir,'name'))
     # print(hasattr(vir,'gender'))
 
-    print(vir.__dict__)
-    print(vir.name)
-    print(vir.__dict__['name'])
+    # print(vir.__dict__)
+    # print(vir.name)
+    # print(vir.__dict__['name'])
     # vir.display()
 
     # vir.batting()
