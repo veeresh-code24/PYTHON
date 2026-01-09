@@ -1,10 +1,13 @@
 class Citizen:
-    def __init__(self,name,age,gender,state,nationality):
+    
+    nationality = 'India'
+
+    def __init__(self,name,age,gender,state):
         self.name = name
         self.age = age
         self.gender = gender
         self.state = state
-        self.nationality = nationality
+
 
     def display(self):
         print(self.name)
@@ -14,13 +17,17 @@ class Citizen:
         print(self.nationality)
 
 def main():
-    iranna = Citizen('Iranna',20,'M','Karnataka','India')
-    veeresh = Citizen('pacchu',24,'M','Maharashtra','India')
-    ipacchu = Citizen('veeresh',34,'M','Kerala','India')
+    iranna = Citizen('Iranna',20,'M','Karnataka')
+    veeresh = Citizen('pacchu',24,'M','Maharashtra')
+    ipacchu = Citizen('veeresh',34,'M','Kerala')
 
-    iranna.display()
-    veeresh.display()
-    ipacchu.display()
+    print(Citizen.__dict__['nationality'])
+    print(Citizen.nationality)
+    print(iranna.name)
+
+    # iranna.display()
+    # veeresh.display()
+    # ipacchu.display()
 
 if __name__ == '__main__':
     main()
