@@ -136,7 +136,7 @@
 # if __name__ == '__main__':
 #     main()
 
-class Cricket:
+'''class Cricket:
     def __init__(self,name,team,score):
         self.name = name
         self.team = team
@@ -215,7 +215,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main()'''
+
+
 
 
 
