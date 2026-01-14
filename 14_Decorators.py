@@ -180,7 +180,7 @@ fun2([1,2,3,4,5,6])'''
 #             print("inside inner")
 # modi_outer = outer(inner)
 
-def get_sum(lst):
+'''def get_sum(lst):
     print(sum(lst))
 
 
@@ -200,7 +200,55 @@ modi_fun = fun('sum')
 modi_fun([1,2,3,4,5])
 
 modi_fun = fun("egiud")
-modi_fun([1,2,3,4,5,6,7,8,9])
+modi_fun([1,2,3,4,5,6,7,8,9])'''
+
+# def outer(ref):
+
+#     def wrapper(lst):
+#         lst = list(map(lambda x : x**2, lst))
+#         ref(lst)
+#     return wrapper
+
+# @outer
+
+# def get_product(lst):
+#     p = 1
+#     for i in lst:
+#         p *= i
+
+#     print(p)
+
+# get_product([1,2,3,4,5])
+
+# mod_get_prod = outer(get_product)
+# mod_get_prod([1,2,3,4,5])
+
+def decorator(num):
+
+    def power_of(ref):
+
+        def wrapper(lst):
+            lst = list(map(lambda x:x**num, lst))
+            ref(lst)
+
+        return wrapper
+    
+    return power_of
+
+@decorator(3)
+
+def get_product(lst):
+    p = 1
+    for i in lst:
+        p *= i
+    print(p)
+
+get_product([1,2,3,4,5])
+
+# mod_pow = decorator(3)
+# mod_get_product = mod_pow(get_product)
+# mod_get_product([1,2,3,4,5])
+
 
 
 
