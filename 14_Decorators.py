@@ -249,6 +249,10 @@ get_product([1,2,3,4,5])
 # mod_get_product = mod_pow(get_product)
 # mod_get_product([1,2,3,4,5])
 
+a = 3 
+b = 4
+print(a+b)
+
 
 
 
