@@ -1,4 +1,4 @@
-class Car:
+'''class Car:
     def __init__(self):
         self.name = 'BMW'
         self.cc = 1000
@@ -39,6 +39,47 @@ def main():
 
 
 if __name__ == '__main__':
+    main()'''
+
+class Cricket:
+    def __init__(self,name,team,score):
+        self.name = name
+        self.team = team
+        self.score = score
+
+    def scored(self):
+        print(self.name, 'scored well...')
+
+    def belongs(self):
+        print(self.team,'belongs to a team')
+
+    def batter(self):
+        print(self.name, "it's a good batter ")
+
+    def display(self):
+        print(self.name)
+        print(self.team)
+        print(self.score)
+
+def main():
+    virat = Cricket('Virat Kohli','RCB',130000)
+    virat.display()
+
+    virat.scored()
+    virat.belongs()
+    virat.batter()
+
+    dhoni = Cricket('Dhoni','CSK',11000)
+    dhoni.display()
+
+    dhoni.scored()
+    dhoni.belongs()
+    dhoni.batter()
+
+
+if __name__ == '__main__':
     main()
+
+
 
 
