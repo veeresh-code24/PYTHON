@@ -223,36 +223,147 @@ modi_fun([1,2,3,4,5,6,7,8,9])'''
 # mod_get_prod = outer(get_product)
 # mod_get_prod([1,2,3,4,5])
 
-def decorator(num):
+# def decorator(num):
 
-    def power_of(ref):
+#     def power_of(ref):
 
-        def wrapper(lst):
-            lst = list(map(lambda x:x**num, lst))
-            ref(lst)
+#         def wrapper(lst):
+#             lst = list(map(lambda x:x**num, lst))
+#             ref(lst)
 
-        return wrapper
+#         return wrapper
     
-    return power_of
+#     return power_of
 
-@decorator(3)
+# @decorator(3)
 
-def get_product(lst):
-    p = 1
-    for i in lst:
-        p *= i
-    print(p)
+# def get_product(lst):
+#     p = 1
+#     for i in lst:
+#         p *= i
+#     print(p)
 
-get_product([1,2,3,4,5])
+# get_product([1,2,3,4,5])
 
 # mod_pow = decorator(3)
 # mod_get_product = mod_pow(get_product)
 # mod_get_product([1,2,3,4,5])
 
-a = 3 
-b = 4
-print(a+b)
+# a = 3 
+# b = 4
+# print(a+b)
 
+# def outer():
+#     x = 99
+
+#     def inner():
+#         print(x)
+
+#     inner()
+
+# outer()
+
+
+# def decorators(num):
+
+#     def power_of(ref):
+
+#         def wrapper(lst):
+#             lst = list(map(lambda x: x*num,lst))
+#             ref(lst)
+
+#         return wrapper
+
+#     return power_of
+
+# @decorators(3)
+
+# def get_product(lst):
+#     p = 1
+#     for i in lst:
+#         p *= i
+#     print(p)
+
+# get_product([1,2,3,4,5])
+
+# mod_get_po = decorators(2)
+# wrapp = mod_get_po(get_product)
+# wrapp([1,2,3,4,5])
+
+# def decorators(num):
+
+#     def outer(ref):
+
+#         def wrapper(lst):
+#             lst = list(map(lambda x : x**num , lst))
+#             ref(lst)
+
+#         return wrapper
+#     return outer
+
+# @decorators(2)
+
+
+# def get_product(lst):
+#     p = 1
+#     for i in lst:
+#         p *= i
+#     print(p)
+
+# get_product([1,2,3,4,5])
+
+# modifi_outer = decorators(3)
+# modifieret_wrapper = modifi_outer (get_product)
+# modifieret_wrapper([1,2,3,4,5])
+
+# def outer():
+#     x = 99
+
+#     def inner():
+#         print(x)
+
+#     return inner
+
+# x = outer()
+# del outer
+# x()
+
+# def outer():
+#     x = 99
+
+#     def inner1():
+#         y = 92
+
+#         def inner2():
+#             print(x)
+#             print(y)
+
+#         return inner2
+#     return inner1
+
+# mod_ret1 = outer()
+# mod_ret2 = mod_ret1()
+# mod_ret2()
+
+# def outer():
+#     x = 99
+
+#     def inner1():
+#         y = 88
+
+#         def inner2():
+#             print(x)
+#             print(y)
+
+#         return inner2
+#     return inner1
+
+# mod_inne1 = outer()
+# mod_ret2 = mod_inne1()
+# mod_ret2()
+# del outer
+# del mod_inne1
+# mod_ret2()
 
 
 
