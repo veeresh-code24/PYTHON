@@ -61,7 +61,7 @@
 #     main()
 
 
-class Demo:
+'''class Demo:
 
     a = 100
     b = 200
@@ -92,7 +92,7 @@ def main():
     print(Demo.b)  #2000
 
 if __name__ == '__main__':
-    main()
+    main()'''
 
 
 
