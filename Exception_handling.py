@@ -128,21 +128,105 @@ def main():
 
 main()'''
 
-def menu(item):
-    if item == 'pizza':
-        print('Enjoy your pizza')
-    elif item == 'Burger':
-        print('Enjoy your burger')
-    elif item == 'idli':
-        print("Enjoy your tiffian")
-    else:
-        raise NameError
+# def menu(item):
+#     if item == 'pizza':
+#         print('Enjoy your pizza')
+#     elif item == 'Burger':
+#         print('Enjoy your burger')
+#     elif item == 'idli':
+#         print("Enjoy your tiffian")
+#     else:
+#         raise NameError
     
+# def main():
+#     item = input("Enter your food")
+#     menu(item)
+
+# main()
+
+
+'''def fun1():
+
+    print('Fun1 started execution')
+    try:
+        num = int(input("Enter your numerator\n"))
+        den = int(input("Enter your numerator\n"))
+        res = num/den
+        print(res)
+    except ZeroDivisionError as e :
+        print("fun1() exception handled here") 
+        raise e   
+    finally:
+        print("fun1() terminated normally")
+
 def main():
-    item = input("Enter your food")
-    menu(item)
+    print('main() started execution')
+
+    try:
+
+        fun1()
+    except:
+        print("main() exception handled here")
+
+    print('main() terminated execution')
+
+main()'''
+
+
+# def fun1(x):
+
+#     try:
+#         num = 100/x
+#         print(num)
+#         print("inside try")
+#     except:
+#         print('except try')
+#     else:
+#         print('else try')
+#     finally:
+#         print('finally try')
+
+# def main():
+#     x = int(input("enter a number"))
+#     fun1(x)
+
+# main()
+
+
+def fun():
+    print('fun() started execution')
+    try:
+
+        num = int(input())
+        den = int(input())
+        res = num/den
+        print(res)
+    except ZeroDivisionError as e:
+        print('exception handled here')
+        raise e
+    finally:
+
+        print('fun() terminated execution')
+
+def main():
+    print("main() started execution")
+    try:
+        fun()
+    except:
+        print('main() except handled here')
+    print("main() exception terminated")
 
 main()
+
+
+
+
+
+
+
+
+
+
 
 
 
