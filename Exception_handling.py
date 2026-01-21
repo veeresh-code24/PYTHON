@@ -103,18 +103,47 @@ def main():
 
 main()'''
 
-print("Bank server secure connection established here")
-try:
+# print("Bank server secure connection established here")
+# try:
 
-    loan = int(input("Enter your loan amount\n"))
-    t_d = int(input("Enter your time duration loan\n"))
-    inte = 10
-    res = (loan*t_d*inte)/100
-    print("Your loan amount is ",res)
-except:
-    print("Something went wrong")
+#     loan = int(input("Enter your loan amount\n"))
+#     t_d = int(input("Enter your time duration loan\n"))
+#     inte = 10
+#     res = (loan*t_d*inte)/100
+#     print("Your loan amount is ",res)
+# except:
+#     print("Something went wrong")
 
-print("Bank connection securely closed here")
+# print("Bank connection securely closed here")
+
+'''def validate(mob):
+    if len(mob) == 10:
+        print("Mob number is validate")
+    else:
+        raise ValueError
+
+def main():
+    mob = input("Enter your mobile number")
+    validate(mob)
+
+main()'''
+
+def menu(item):
+    if item == 'pizza':
+        print('Enjoy your pizza')
+    elif item == 'Burger':
+        print('Enjoy your burger')
+    elif item == 'idli':
+        print("Enjoy your tiffian")
+    else:
+        raise NameError
+    
+def main():
+    item = input("Enter your food")
+    menu(item)
+
+main()
+
 
 
 
