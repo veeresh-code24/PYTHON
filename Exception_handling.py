@@ -193,7 +193,7 @@ main()'''
 # main()
 
 
-def fun():
+'''def fun():
     print('fun() started execution')
     try:
 
@@ -216,7 +216,13 @@ def main():
         print('main() except handled here')
     print("main() exception terminated")
 
-main()
+main()'''
+
+a = 10
+b = 20
+print(a+b)
+
+
 
 
 
