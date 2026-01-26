@@ -218,9 +218,35 @@ def main():
 
 main()'''
 
-a = 10
+'''a = 10
 b = 20
-print(a+b)
+print(a+b)'''
+
+def validate(mob):
+    if len(mob) == 10:
+        print("It's  a valid mobile number")
+    else:
+        raise ValueError
+    
+def main():
+
+    mob = input()
+    validate(mob)
+
+main()
+
+
+'''def validate(mob):
+    if len(mob) == 10:
+        print("Mob number is validate")
+    else:
+        raise ValueError
+
+def main():
+    mob = input("Enter your mobile number")
+    validate(mob)
+
+main()'''
 
 
 
