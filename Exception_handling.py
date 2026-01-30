@@ -248,9 +248,22 @@ def main():
 
 main()'''
 
-a = 10
-b = 20
-print(a+b)
+# a = 10
+# b = 20
+# print(a+b)
+
+def validate(mob):
+    if len(mob) == 10:
+        print("Its'a validate mobile number")
+    else:
+        print("it's N0n validate")
+
+def main():
+    mob = input()
+    validate(mob) 
+
+main()
+
 
 
 
