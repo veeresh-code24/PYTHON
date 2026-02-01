@@ -252,17 +252,62 @@ main()'''
 # b = 20
 # print(a+b)
 
+# def validate(mob):
+#     if len(mob) == 10:
+#         print("Its'a validate mobile number")
+#     else:
+#         print("it's N0n validate")
+
+# def main():
+#     mob = input()
+#     validate(mob) 
+
+# main()
+
+'''class InvalidMobileNumberError(Exception):
+    pass
 def validate(mob):
     if len(mob) == 10:
-        print("Its'a validate mobile number")
+        print('Valid mobile number')
     else:
-        print("it's N0n validate")
-
+        raise InvalidMobileNumberError('Inalid mobile number error')
+    
 def main():
-    mob = input()
-    validate(mob) 
+
+    mob = input("Enter your mobile number")
+    validate(mob)
+
+main()'''
+
+class ItemNotInFoundError(Exception):
+    pass
+
+def menu(item):
+    if item == 'idli':
+        print('Enjoy your idli')
+
+    elif item == 'pizza':
+        print('Enjoy your pizza')
+
+    elif item == 'chai':
+        print('Enjoy your tea')
+
+    else:
+        raise ItemNotInFoundError('Your menu is not there')
+    
+def main():
+    item = input('Enter your favourite item')
+    try:
+        menu(item)
+
+    except ItemNotInFoundError as e:
+        print(e)
 
 main()
+
+
+
+
 
 
 
