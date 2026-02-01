@@ -141,7 +141,7 @@
 # print(even_lst)
 
 # from functools import reduce
-lst = [10,20,12,3,7,17,19,28]
+# lst = [10,20,12,3,7,17,19,28]
 
 
 # def call(a,b):
@@ -153,11 +153,25 @@ lst = [10,20,12,3,7,17,19,28]
 # x = reduce(lambda x,y : x+y,lst)
 # print(x)
 
-def call(a):
-    if a % 2 == 0:
-        return True
-    else:
-        return False
+# fun = (lambda a,b : a**b)(2,3)
+# print(fun)
 
-res = list(map(call,lst))
+# fun1 = (lambda x,y : x+y)(10,2)
+# print(fun1)
+
+fun = lambda x,y : x**y
+res = fun(100,2)
 print(res)
+
+res1 = fun(10,2)
+print(res1)
+
+fun = lambda x,y : x/y
+res2 = fun(100,50)
+print(res2) 
+
+res3 = fun(10,2)
+print(res3)
+
+lam = (lambda x,y : x**y)(2,10)
+print(lam)
