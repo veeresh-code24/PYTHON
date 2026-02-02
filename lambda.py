@@ -159,7 +159,7 @@
 # fun1 = (lambda x,y : x+y)(10,2)
 # print(fun1)
 
-fun = lambda x,y : x**y
+'''fun = lambda x,y : x**y
 res = fun(100,2)
 print(res)
 
@@ -174,4 +174,84 @@ res3 = fun(10,2)
 print(res3)
 
 lam = (lambda x,y : x**y)(2,10)
-print(lam)
+print(lam)'''
+
+
+# lst = [10,2,2,3,1,23,77,32]
+
+# def main(x):
+#     if x % 2 == 0:
+#         return True
+#     else:
+#         return False
+# evn_lst = list(filter(main,lst))
+# print(evn_lst)
+
+# evn_lst = list(filter(lambda x : x % 2 != 0, lst))
+# print(evn_lst)
+
+# age = [10,20,30,40,12,2,4,76,54,12,14,17,18]
+
+# def main(x):
+#     if x <= 18:
+#         return True
+#     else:
+#         return False
+# res = list(filter(main, age))
+# print(res)
+
+# res = list(filter(lambda x : True if x >= 18 else False , [2,4,6,8,98,76,54]))
+# print(res)
+
+# from functools import reduce
+# lst = [1,1,3,1,5]
+# def fun(x,y):
+#     return x*y 
+
+# res = reduce(fun, lst)
+# print(res)
+
+# res = reduce(lambda x,y : x * y, lst)
+# print(res)
+
+# lst = [1,2,3,4,5]
+# def fun(x):
+#     return x**2
+
+# res = list(map(fun, lst))
+# print(res)
+# sq_lst = set(map(lambda x : x+2 , lst))
+# print(sq_lst)
+
+
+# students = [("Ram", 85), ("John", 90), ("Alex", 78)]
+
+# names = list(map(lambda x: x[0], students))
+# print(names)
+
+
+# lst = [65, 45, 78]
+# res  = list(map(lambda x : x + 5 , lst))
+# print(res)
+
+# lst1 = ['1','2','3','4']
+# lst2 = [1,10,3,4]
+
+
+# res = list(map(lambda x ,y : x +y , lst1 , lst2))
+# print(res)
+
+def main(num):
+    return lambda x : x*num 
+
+res1 = main(2)(5)
+print(res1)
+
+res2 = main(3)
+print(res2(10))
+
+res3 = main(100)
+print(res3(10))
+
+
+
