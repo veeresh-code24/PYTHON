@@ -241,17 +241,25 @@ print(lam)'''
 # res = list(map(lambda x ,y : x +y , lst1 , lst2))
 # print(res)
 
-def main(num):
-    return lambda x : x*num 
+# def main(num):
+#     return lambda x : x*num 
 
-res1 = main(2)(5)
-print(res1)
+# res1 = main(2)(5)
+# print(res1)
 
-res2 = main(3)
-print(res2(10))
+# res2 = main(3)
+# print(res2(10))
 
-res3 = main(100)
-print(res3(10))
+# res3 = main(100)
+# print(res3(10))
+
+def fun(num):
+    return lambda x : x*num
+n = int(input("Enter your number"))
+math_table = fun(n)
+
+for i in range(1, 11):
+    print(n, "X" , i, "=", math_table(i))
 
 
 

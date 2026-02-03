@@ -103,71 +103,16 @@ outer()'''
 #     print(x)
 # outer()
 
-# x = lambda x : x*x
-# print(x(5))
-# x = (lambda x,y : x+y)(2,5)
+# x = 99
 # print(x)
+# def fun():
+    # print(globals())
+    # global y
+    # y = 999
 
+    # print(x)
+    # print(locals())
 
-# fun = (lambda x,y: x**y)
-# res = fun(3,5)
-# print(res)
-
-# fun1 = fun(5,5)
-# print(fun1)
-
-# iranna = fun(10,2)
-# print(iranna)
-
-# from functools import reduce
-lst = [2,3,4,5,6,7,89,10]
-# def fun(n):
-#     if n % 2 == 0:
-#         return True
-#     else:
-#         return False
-# res = list(filter(fun,lst))
-# print(res)
-
-# fun = list(filter(lambda x : x % 2 != 0,lst))
-# print(fun)
-
-# def fun(a,b):
-#     return a+b
-
-# res = reduce(fun,lst)
-# print(res)
-
-# fun = reduce(lambda x,y : x*y,lst)
-# print(fun)
-
-# fun = reduce(lambda x,y : a+b, lst)
-# print(fun)
-
-# def fun(a):
-#     return a*a
-
-# res = list(map(fun,lst))
-# print(res)
-
-
-# fun = list(map(lambda x : x*x,lst))
-# print(fun)
-
-# def fun(num):
-    # return lambda x : x*num
-
-# res = fun(2)(5)
-# print(res)
-
-# fun2 = fun(5)
-# res = fun2(4)
-# print(res)
-
-def fun(num):
-    return lambda x : x*num
-
-res = int(input("Enter your number\n"))
-
-print(res)
-
+# fun()
+# print(x)
+# print(y)
