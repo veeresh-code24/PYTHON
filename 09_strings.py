@@ -88,10 +88,80 @@
 # s2 = s1 + "world"
 # print(s2)
 
-s1 = "hello"
-print(s1)
-s1 = s1 + "world"
-print(s1)
+# s1 = "hello"
+# print(s1)
+# s1 = s1 + "world"
+# print(s1)
+
+
+# c = "a"
+# print(chr(ord(c)-32))
+
+# c = "b"
+# print(chr(ord(c)-32))
+
+# n = input("Enter the string\n ")
+# u_case = ""
+
+# for i in n:
+#     if ord(n)>=97 and ord(n)<=122:
+#         u_case += chr(ord(i)-32)
+#     else:
+#         u_case += ord(i)
+
+# print(u_case)
+
+# c = ['Python', 'Java', 'c++', 'Django', 'c']
+# new_str = "\n".join(c)
+# print(new_str)
+
+# for i in c:
+    # new_str += i
+
+# print(new_str)
+
+# a = 10
+# b = 20
+# c = 30
+# print(a,b,c)
+# print(a,b,c,sep="manya ",end="ibbani")
+
+url = ["http/iranna.com", "http/veeresh.com","http.pacchu/n.com/",
+       "htt.preetu/.org"]
+
+# for i in url:
+    # if i[0:4] == "http":
+    # if i[len(i)-3::] == "com" or i[len(i)-4::] == "com/":
+        # print(i)
+
+# for i in url:
+    # if i.startswith("http") or i.endswith("com") or i.endswith("com/"):
+        # print(i)
+
+u_case, lower_case, digi, spe_car = "","","",""
+
+n = input("Enetr the string\n")
+
+for i in n:
+    if ord(i) >= 65 and ord(i) <= 90:
+        u_case += i
+    elif ord(i)>= 97 and ord(i) <=122:
+        lower_case += i
+    elif ord(i) >= 48 and ord(i)<= 57:
+        digi += i
+    else:
+        spe_car += i
+
+print(u_case)
+print(lower_case)
+print(digi)
+print(spe_car)
+
+
+
+
+        
+
 
 
 
