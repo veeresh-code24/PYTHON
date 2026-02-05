@@ -191,6 +191,81 @@ url = ["http/iranna.com", "http/veeresh.com","http.pacchu/n.com/",
 # s = "{} ".format(*[10,20,30])
 # print(s)
 
+# from functools import reduce
+# n = input("Enter the number\n").split()
+
+# l = list(map(int, n))
+
+# res = reduce(lambda x,y : x+y,l)
+# avg = res/len(l)
+# exp = "{0:*>10.4f}".format(avg)
+# print(exp)
+
+# import math
+
+# res = "{0:!>10.5f}".format(math.pi)
+# print(res)
+
+# res = 5483578300000000000000
+
+# print("{0:*>50.10e}".format(res))
+
+'''u_case, low_case, dig, spe_chr = "","","",""
+n = input("Enter your character\n")
+
+for i in n:
+    if i.isupper():
+        u_case += i
+
+    elif i.islower():
+        low_case += i
+
+    elif i.isnumeric():
+        dig += i
+
+    else:
+        spe_chr += i
+
+print("upper case", u_case)
+print("lower case", low_case)
+print("digit", dig)
+print("Special character", spe_chr)'''
+
+# n = list(map(int,input("Enter the numbers\n").split()))
+
+# total = 0
+
+# for i in n:
+
+#     total = total + i
+
+# avg = total/len(n)
+# print(avg)
+
+# s = "python"
+# s1 = str(24)
+# print(s + s1)
+
+# n = input("Enter the number\n").split()
+
+# total = 0
+
+# for i in n:
+#     total += int(i)
+
+# avg = total/len(n)
+# print(avg)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
