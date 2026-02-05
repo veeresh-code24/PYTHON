@@ -138,24 +138,62 @@ url = ["http/iranna.com", "http/veeresh.com","http.pacchu/n.com/",
     # if i.startswith("http") or i.endswith("com") or i.endswith("com/"):
         # print(i)
 
-u_case, lower_case, digi, spe_car = "","","",""
+# u_case, lower_case, digi, spe_car = "","","",""
 
-n = input("Enetr the string\n")
+# n = input("Enetr the string\n")
 
-for i in n:
-    if ord(i) >= 65 and ord(i) <= 90:
-        u_case += i
-    elif ord(i)>= 97 and ord(i) <=122:
-        lower_case += i
-    elif ord(i) >= 48 and ord(i)<= 57:
-        digi += i
-    else:
-        spe_car += i
+# for i in n:
+#     if ord(i) >= 65 and ord(i) <= 90:
+#         u_case += i
+#     elif ord(i)>= 97 and ord(i) <=122:
+#         lower_case += i
+#     elif ord(i) >= 48 and ord(i)<= 57:
+#         digi += i
+#     else:
+#         spe_car += i
 
-print(u_case)
-print(lower_case)
-print(digi)
-print(spe_car)
+# print(u_case)
+# print(lower_case)
+# print(digi)
+# print(spe_car)
+
+# n = input("Enter the string\n")
+# s = n.capitalize()
+# print(s)
+
+# n = input("Enter the string\n")
+# table = n.maketrans("aeiou", "AEIOU", "1234567890")
+# s_table = n.translate(table)
+# print(s_table)
+
+# name = input("Enter your name\n")
+# place = input("Enter your place\n")
+# s = "my name is {}, I am from {}".format(name, place)
+
+# print(s)
+
+# s = "{2} {0} {1} ".format(10,20,30)
+# print(s)
+
+# s = "{0:^10}".format(999)
+# print(s)
+
+# import math
+
+# s = "{0:>10.4f}".format(math.pi)
+# print(s)
+
+# s = 597820000000000000000
+
+# n = "{0:!>20.3e}".format(s)
+# print(n)
+
+# s = "{} ".format(*[10,20,30])
+# print(s)
+
+
+
+
 
 
 
