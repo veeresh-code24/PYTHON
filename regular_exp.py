@@ -133,10 +133,47 @@ iranna-123@gmail.com
 iranna@yahoo.com
 iranna@outlook.com
 iranna@hotmail.com'''
-regex = r"[a-zA-Z0-9_$\-]+@[a-zA-Z0-9]+.com"
+# regex = r"([a-zA-Z0-9_$\-]+)@([a-zA-Z0-9]+.com)"
 
-match = re.findall(regex, text)
-print(match)
+# match = re.findall(regex, text)
+# print(match)
+
+# match = re.match(regex, text)
+
+# for i in match:
+# print(match.group(0))
+# print(match.group(1))
+# print(match.group(2))
+
+# regex = r"[a-zA-Z0-9]+[a-zA-Z0-9].com"
+
+# str = re.subn(regex, "@rooman.com", text)
+# print(str)
+
+# text = "2005-04-23"
+# regex = re.split(r"[/:-]", text)
+# print(regex)
+
+text = "90198808221 901988082"
+
+# regex = r"\d{10}"
+
+# match = re.search(regex, text)
+# print(text[match.start():match.end()])
+
+p = re.compile(r"\d{10}")
+print(p.findall(text))
+
+s = p.search(text)
+print(text[s.start():s.end()])
+
+print(p.findall(text))
+
+
+
+
+
+
 
 
 
