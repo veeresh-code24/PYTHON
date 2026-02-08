@@ -125,14 +125,14 @@ print(match)
 # match = re.findall(regex, text)
 # print(match)
 
-text = '''iranna@gmail.com
-iranna@@gmail.com
-iranna_xyz@gmail.com
-irann?>@gmail.com
-iranna-123@gmail.com
-iranna@yahoo.com
-iranna@outlook.com
-iranna@hotmail.com'''
+# text = '''iranna@gmail.com
+# iranna@@gmail.com
+# iranna_xyz@gmail.com
+# irann?>@gmail.com
+# iranna-123@gmail.com
+# iranna@yahoo.com
+# iranna@outlook.com
+# iranna@hotmail.com'''
 # regex = r"([a-zA-Z0-9_$\-]+)@([a-zA-Z0-9]+.com)"
 
 # match = re.findall(regex, text)
@@ -154,21 +154,69 @@ iranna@hotmail.com'''
 # regex = re.split(r"[/:-]", text)
 # print(regex)
 
-text = "90198808221 901988082"
+# text = "90198808221 901988082"
 
 # regex = r"\d{10}"
 
 # match = re.search(regex, text)
 # print(text[match.start():match.end()])
 
-p = re.compile(r"\d{10}")
-print(p.findall(text))
+# p = re.compile(r"\d{10}")
+# print(p.findall(text))
 
-s = p.search(text)
-print(text[s.start():s.end()])
+# s = p.search(text)
+# print(text[s.start():s.end()])
 
-print(p.findall(text))
+# print(p.findall(text))
 
+# text = ['9019880822',
+# '9113571717',
+# '9945324556',
+# '987564763893']
+
+# p = re.compile(r"\b\d{5}[02468]\d{4}\b")
+
+# for i in text:
+#     if p.search(i) != None:
+#         print(i, "Valid")
+#     else:
+#         print(i,"iNvalid")
+
+# regex = r"\b\d{5}[02468]\d{4}\b"
+
+# match = re.search(regex, text)
+
+# for i in match:
+#     if i != None:
+#         print(i, "valid")
+#     else:
+#         print(i,'invalid')
+
+text = '''bill@outlook.com 1975-11-20
+elon@mail.com 2005-05-15
+messi@yahoo.com 1987/06/28
+amir@outlook.com 1976:11:23'''
+
+# regex = r"(\w+)@\w{3,}.\w{2,} (\d{4}[-:/]\d{2}[-:/]\d{2})"
+
+# match = re.finditer(regex, text)
+
+# for i in match:
+#     name = i.group(1)
+#     dob = i.group(2)
+#     l = re.split(r"[-:/]", dob)
+#     print(name, "age=", 2025-int(l[0]))
+
+regex = r"(\w+)@\w{3,}.\w{2,} (\d{4}[-:/]\d{2}[-:/]\d{2})"
+
+match = re.finditer(regex, text)
+
+for i in match:
+    name = i.group(1)
+    dob = i.group(2)
+
+    l = re.split(r"[-:/]", dob)
+    print(name, "age=", 2026 - int(l[0]))
 
 
 

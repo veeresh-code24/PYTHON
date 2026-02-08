@@ -257,6 +257,22 @@ print("Special character", spe_chr)'''
 # print(avg)
 
 
+# Format Conversion
+# a = 70
+# print(a)
+
+# print("{0:b}".format(a))
+# print("{0:o}".format(a))
+# print("{0:x}".format(a))
+
+import timeit
+
+print(timeit.timeit(stmt="{0:.2f}".format(3.2222),number=100000))
+print(timeit.timeit(stmt=f"{3.2222:.2f}", number= 100000))
+
+
+
+
 
 
 
