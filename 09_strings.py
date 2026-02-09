@@ -265,14 +265,214 @@ print("Special character", spe_chr)'''
 # print("{0:o}".format(a))
 # print("{0:x}".format(a))
 
-import timeit
+# import timeit
 
-print(timeit.timeit(stmt="{0:.2f}".format(3.2222),number=100000))
-print(timeit.timeit(stmt=f"{3.2222:.2f}", number= 100000))
+# print(timeit.timeit(stmt="{0:.2f}".format(3.2222),number=100000))
+# print(timeit.timeit(stmt=f"{3.2222:.2f}", number= 100000))
+
+# text = "Python"
+
+# rev = ""
+
+# for ch in text:
+#     rev += ch
+
+# print(rev)
+
+# text = "Python"
+# rev = ""
+
+# for ch in text:
+#     rev = ch + rev
+
+
+# print(rev)
+
+# string  = input("Enter the palindrome string")
+
+# if string == string[::-1]:
+#     print("palindrome")
+# else:
+#     print("Not palindrome")
+
+# str = input("Enter the string\n")
+
+# rev = ""
+
+# for i in str:
+#     rev = i + rev
+
+# if str == rev:
+#     print("It's  palindrome")
+# else:
+#     print("It's not palindrome")
+
+# text = input("Enter the vowels string\n")
+
+# count = ""
+
+# for i in text:
+#     if i in "aeiouAEIOU":
+#         count += i
+
+# print(count)
+
+# text = input("Enter the string\n").lower()
+
+# count = 0
+
+# for i in text:
+#     if i in "aeiouAEIOU":
+#         count += 1
+
+
+# print(count)
+
+
+# ch = input("Enter the string")
+
+# rev = 0
+
+# for _ in ch:
+#     if _ in ch:
+#         rev += 1
+
+
+# print(rev)
+
+# text = input("Enter the string\n")
+
+# rev = 0
+
+# for i in text:
+#     if i in "aeiouAEIOU":
+#         rev += 1
+
+# print(rev) 
+
+# text = "python"
+# rev = 0
+
+# for i in "aeiouAEIOU":
+#     rev = text.count(i)
+#     rev += 1
+
+# print(rev)
+
+
+# text = input("Enter the string\n")
+
+# rev = 0
+
+# for i in text:
+#     rev = text.count(i)
+#     rev += 1
+
+# print(rev)
+
+# import re
+# text = "p y t h o n"
+
+# rev = ""
+
+# for i in text:
+    # if i != "":
+        # rev += i
+# print(rev)
+
+# rev = ""
+# regex = r"\s"
+
+# match = re.findall(regex, text)
+# print(match)
+
+# for i in match:
+#     if i != " ":
+#         rev += i
+# print(rev)
+
+# text = "programming"
+
+
+# for i in text:
+
+#     if text.count(i) > 1:
+        
+#         print(i)
+
+# text = "P y t h o n"
+
+# rev = ""
+
+# for i in text:
+#     if i != " ":
+#         rev += i
+
+# print(rev)
+
+# text = "iranna"
+
+# for i in text:
+#     if text.count(i) == 1:
+#         print(i)
+
+
+# s = "iirra"
+
+# for ch in s:
+#     if s.count(ch) == 1:
+#         print(ch)
+#         break
+
+# s = "python"
+# a = "j" + s[0:6]
+# print(a)
+
+# s = "python"
+# rev = ""
+# for i in s:
+#     rev = i + rev
+
+# print(s)
+# print(rev)
+
+# s = input("enter the palindrome string\n")
+# rev = ""
+# for i in s:
+#     rev = i + rev
+
+# if rev == s:
+#     print("It's a palindrome")
+# else:
+#     print("It's not a palindrome")
+
+# s = input("Enter the string\n")
+# rev = 0
+# for i in "aeiouAEIOU":
+#     rev += s.count(i)
+#     # rev += 1
+
+# print(rev)
+
+# s = "python"
+
+# rev = 0
+
+# for i in s:
+#     rev += 1
+
+# print(rev)
+
+text = "programming"
+# rev = ""
+
+for i in text:
+    if text.count(i) > 1:
+        print(i)
 
 
 
-
+    
 
 
 
