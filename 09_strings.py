@@ -463,13 +463,88 @@ print("Special character", spe_chr)'''
 
 # print(rev)
 
-text = "programming"
+# text = "programming"
+# # rev = ""
+
+# for i in text:
+#     if text.count(i) > 1:
+#         print(i)
+
+# text = "Pyhton is easy"
+
+# rev = 1
+
+# for i in text:
+#     if i != " ":
+#         rev += 1
+# print(rev)
+
+# s = "swiss"
+
+# for i in s:
+#     if s.count(i) == 1:
+#         print(i)
+#         break
+
+# s = "s w i s s"
+
 # rev = ""
 
-for i in text:
-    if text.count(i) > 1:
-        print(i)
+# for i in s:
+#     if i != " ":
 
+#         rev += i
+# print(rev)
+
+# s = "p y t h o n"
+
+# rev = ""
+
+# for i in s:
+#     if i != " ":
+#         rev += i
+# print(rev)
+
+# s = "python"
+# rev = ""
+
+# if s == s[::-1]:
+#     print("It's a palindrome")
+
+# else:
+#     print("It's not palindrome")
+
+# n = int(input("enter the number"))
+
+# for i in range(2, n+1):
+#     if n % i == 0:
+#         break
+# if i == n:
+#     print("prime number")
+
+# else:
+#     print("Its not prime number")
+
+
+# s = "programming"
+
+# for i in s:
+#     if s.count(i) == 1:
+#         print(i)
+#         break
+
+# s = 74
+
+# print(" {0:b}".format(s))
+
+
+
+
+
+
+
+
+        
 
 
     
