@@ -1,71 +1,85 @@
-# mrks = []
+# from functools import reduce
+# nums = input("Enter the numbers[]\n").split()
+# lst = list(map(int, nums))
+# sum_all = reduce(lambda x,y : x+y, lst)
+# res = sum_all/len(nums)
+# print(res)
 
-# name1 = input("Enter your marks 1: ")
-# marks.append(name1) 
+# nums = input("Enter the numbers\n")
+# nums = eval(nums)
+# print(nums)
 
-# name2 = input("Enter your fruit name 2: ")
-# fruits.append(name2)
-
-# name3 = input("Enter your fruit name 3: ")
-# fruits.append(name3)
-
-# name4 = input("Enter your fruit name 4: ")
-# fruits.append(name4)
-
-# name5 = input("Enter your fruit name 5: ")
-# fruits.append(name5)
-
-# name6 = input("Enter your fruit name 6: ")
-# fruits.append(name6)
-
-# fruits.sort()
-
-  
-# print(fruits)  
+# nums= list(map(int, input("Enter the number\n").replace(","," ").split()))
 
 
+# total = 0
 
-# marks = []
+# for i in nums:
+#     total += i
 
+# print(total/len(nums))
 
-# name1 = int(input("Enter your marks 1: "))
-# marks.append(name1)  
+# import ast
+# nums = input("Enter the number\n")
+# nums = ast.literal_eval(nums)
 
-# name2 = int(input("Enter your marks 1: "))
-# marks.append(name2) 
+# start = int(input("Enter the starting index\n"))
+# end = int(input("enter the ending index\n"))
 
-# name3 = int(input("Enter your marks 1: "))
-# marks.append(name3) 
-
-# name4 = int(input("Enter your marks 1: "))
-# marks.append(name4) 
-
-# name5 = int(input("Enter your marks 1: "))
-# marks.append(name5)
-
-# name6 = int(input("Enter your marks 1: "))
-# marks.append(name6) 
-
-# marks.sort()
-
-# print(marks)
-
-# a = ("manya", "iranna", 3, False, "pacchu")
-# a[0] = "iranna"
-# print(a)
+# print(sum(nums[start:end+1]))
 
 
-# a = [1,2,3,4,5 ,5,5,4,3,21,1,1,1]
-# # print(sum(a))
 
-# print(a.count(5))
-# print(a)
 
-# i = 1
-# while i <= 51:
 
-#     print(i)
-#     i += 1s
+# res = 0
 
-a = "iranna"
-print(a)
+# for i in nums:
+#         res += i
+
+
+# print(res/len(nums))
+
+# lst1 = [1,2,2,1,2,1]
+# lst2 = [21,21,121,2,11,211,11]
+
+# for i in lst2:
+#     if i not in lst1:
+#         lst1.append(i)
+# print(lst1)
+
+
+# lst = [10,21,21,2,21,21]
+
+# for i in range(len(lst)):
+#     print(i,lst[i])
+
+# import ast
+
+# lst1 = input("Enter the numbers between[]\n")
+# lst1 = eval(lst1)
+
+# n = int(input("Enter the number\n"))
+
+# for i in range(len(lst1)):
+#     if n < lst1[i]:
+#         lst1.insert(i,n)
+#         break
+#     else:
+#         lst1.append(n)
+
+
+# print(lst1)
+
+# lst = [1,2,3,4,5]
+
+# print(sum(lst)-max(lst))
+# print(sum(lst)-min(lst))
+
+
+
+
+
+
+
+
