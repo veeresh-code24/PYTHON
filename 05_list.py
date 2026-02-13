@@ -169,6 +169,89 @@
 #         total += j
 # print(total)
 
+lst = [1,2,3,5,6]
+
+sqa_lst = []
+
+for i in lst:
+    sqa_lst.append(i**2)
+
+print(lst)
+print(sqa_lst)
+
+# sqa_lst = [i**2 for i in lst]
+# print(sqa_lst)
+
+# sqa_lst = [i**2 for i in lst if i%2==0]
+# print(sqa_lst)
+
+lst1 = [10,30,50,70,90]
+lst2 = [20,40,60,80,100]
+# print(list(zip(lst1,lst2)))
+
+# for i,j in zip(lst1, lst2):
+    # print(i,j)
+
+# lst1 = ["M","i","ira","stud","SDIT",]
+# lst2 = ["y","is","nna","ing","college"]
+
+# res = []
+
+# for i,j in zip(lst1,lst2):
+#     res.append(i+j)
+
+# print(" ".join(res))
+
+# for i ,j in zip(lst1, lst2):
+#     if i == j:
+#         print("matching",i,j)
+
+# a = [1,2,3]
+# b = [1,2,4]
+# count = 0
+
+# for x, y in zip(a, b):
+#     if x != y:
+#         count += 1
+#         print("Mismatch:", x, y)
+
+# print(count)
+
+
+# matrix = [[1,2,3],
+#           [4,5,6],
+#           [7,8,9]]
+
+# trans = list(zip(*matrix))
+# print(trans)
+
+# for i,j,k in trans:
+#     print(i,j,k)
+
+# lst = [i + j for i,j in zip(lst1, lst2)]
+# print(lst)
+
+s = input("Enter the string\n")
+lst = s.split()
+res = []
+
+for i in range(len(lst)):
+    if len(lst[i]) > 5:
+        res.append(lst[i].lower())
+    else:
+        res.append(lst[i].upper())
+print(res)
+print(' '.join(res))
+
+
+
+
+
+
+
+
+
+
 
 
 
