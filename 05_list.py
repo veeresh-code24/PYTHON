@@ -169,15 +169,15 @@
 #         total += j
 # print(total)
 
-lst = [1,2,3,5,6]
+# lst = [1,2,3,5,6] 
 
-sqa_lst = []
+# sqa_lst = []
 
-for i in lst:
-    sqa_lst.append(i**2)
+# for i in lst:
+    # sqa_lst.append(i**2)
 
-print(lst)
-print(sqa_lst)
+# print(lst)
+# print(sqa_lst)
 
 # sqa_lst = [i**2 for i in lst]
 # print(sqa_lst)
@@ -185,8 +185,8 @@ print(sqa_lst)
 # sqa_lst = [i**2 for i in lst if i%2==0]
 # print(sqa_lst)
 
-lst1 = [10,30,50,70,90]
-lst2 = [20,40,60,80,100]
+# lst1 = [10,30,50,70,90]
+# lst2 = [20,40,60,80,100]
 # print(list(zip(lst1,lst2)))
 
 # for i,j in zip(lst1, lst2):
@@ -231,17 +231,54 @@ lst2 = [20,40,60,80,100]
 # lst = [i + j for i,j in zip(lst1, lst2)]
 # print(lst)
 
-s = input("Enter the string\n")
-lst = s.split()
-res = []
+# s = input("Enter the string\n")
+# lst = s.split()
+# res = []
 
-for i in range(len(lst)):
-    if len(lst[i]) > 5:
-        res.append(lst[i].lower())
-    else:
-        res.append(lst[i].upper())
-print(res)
-print(' '.join(res))
+# for i in range(len(lst)):
+#     if len(lst[i]) > 5:
+#         res.append(lst[i].lower())
+#     else:
+#         res.append(lst[i].upper())
+# print(res)
+# print(' '.join(res))
+
+# print(" ".join([lst[i].lower() if len(lst[i]) > 5 else lst[i].upper() for i in range(len(lst))]))
+
+# nums =[1,2,3,4,5]
+
+# lst = [i**2 for i in nums]
+# print(lst)
+
+nums = [10,15,20,25,30,35]
+
+
+for i in nums:
+    if i % 2 == 0:
+        print(i)
+
+# lst = [i%2==0 for i in nums]
+# print(lst)
+
+words = ["python","java","c","go"]
+# res = []
+
+# for i in words:
+#     res.append(i.upper())
+# print(" ".join(res))
+
+# lst = [i.upper() for i in words]
+# print(lst)
+
+# nums = [5,12,7,18,3,20]
+
+# lst = [i > 10 for i in nums]
+# print(lst)
+
+
+
+
+
 
 
 
