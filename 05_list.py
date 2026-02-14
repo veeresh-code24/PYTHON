@@ -250,17 +250,17 @@
 # lst = [i**2 for i in nums]
 # print(lst)
 
-nums = [10,15,20,25,30,35]
+# nums = [10,15,20,25,30,35]
 
 
-for i in nums:
-    if i % 2 == 0:
-        print(i)
+# for i in nums:
+    # if i % 2 == 0:
+        # print(i)
 
 # lst = [i%2==0 for i in nums]
 # print(lst)
 
-words = ["python","java","c","go"]
+# words = ["python","java","c","go"]
 # res = []
 
 # for i in words:

@@ -193,6 +193,40 @@
 # tup = 10,20,30
 # print(tup,type(tup))
 
-tup = 10,20,30
-print(tup)
+# tup = 10,20,30
+# print(tup)
+
+# tup = ()
+# print(type(tup))
+
+# tup = (10,)
+# print(tup, type(tup))
+
+# tup = (10,20,30,40,50)
+# print(tup)
+
+# tup = (10,20,[10,20,30],{1,2,3,1},{1:"x",2:"y"},"python",1+3j,False)
+# print(tup)
+
+# print(tup[2:7])
+# print(tup[::-1])
+# print(tup[-1:-5:-1])
+
+# a = 10,20,30
+# a,b,c = a
+# print(a)
+# print(b)
+# print(c)
+# lst = [10,20,30,40,50,7]
+
+# even_lst = [i for i in lst if i%2!=0]
+# print(even_lst)
+
+
+
+
+
+
+
+
 
