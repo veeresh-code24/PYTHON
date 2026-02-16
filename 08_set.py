@@ -144,9 +144,36 @@ print(hash(999))'''
 # res = {i**2 if i%2==0 else i+i for i in s}
 # print(res)
 
-a = 10
-b = 20
-print(a+b)
+# set  = set()
+# print(set)
+# print(type(set))
+
+# set1 = {10,20,30,40,50,60,70,80,90,10,20,30,40}
+# print(set1)
+
+# set2 = {"python",(10,"apple"),10,3+4j,3.333,True}
+# print(set2)
+
+# print(hash(3.3333))
+
+
+nums = list(map(int, input("Enter the number\n").split(",")))
+n = int(input("Enter the index number\n"))
+
+for i in range(len(nums)):
+    if n < nums[i]:
+        nums.insert(i, n)
+        break
+
+
+
+else:
+    nums.append(n)
+
+print(nums)
+
+
+
 
 
 

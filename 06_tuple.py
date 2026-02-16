@@ -222,10 +222,10 @@
 # even_lst = [i for i in lst if i%2!=0]
 # print(even_lst)
 
-a = 10
-b = 20
-c = a + b
-print(c)
+# a = 10
+# b = 20
+# c = a + b
+# print(c)
 
 
 
