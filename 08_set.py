@@ -175,8 +175,8 @@ print(s)'''
 # s1 = {4,5,6}
 # print(s | s1)
 
-s1 = {1,2,3,4,5,6,7,8,9,10}
-s2 = {8,9,10,22,11,12,13,14}
+# s1 = {1,2,3,4,5,6,7,8,9,10}
+# s2 = {8,9,10,22,11,12,13,14}
 # s3 = s1.union(s2)
 # print(s3)
 
@@ -243,8 +243,8 @@ for i in parent:
 if len(lst) == 0:
     print("parenthesis are balanced")
 else:
-    print("It's not imbalanced")
-    
+    print("It's imbalanced parenthesis")
+
 
 
 

@@ -275,6 +275,37 @@
 # lst = [i > 10 for i in nums]
 # print(lst)
 
+# lst1 = [7,13,1]
+# lst2 = [7,3,10]
+# print(lst1 > lst2)
+
+# lst = [10,20,30,40]
+
+# flag = True
+# for i in lst:
+#     if i < 0:
+#         flag = False
+# nums = [10,20,-30,10]
+
+# flag = True
+# for i in nums:
+    # if i < 0:
+        # print(i)
+        # flag = False
+
+    # break
+    # print(i)
+# print(flag)
+
+# nums = [10,20,30,40,50]
+
+# print(all([i<0 for i in nums]))
+
+
+
+
+
+
 
 
 
