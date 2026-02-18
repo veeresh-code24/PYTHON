@@ -157,20 +157,99 @@ print(hash(999))'''
 # print(hash(3.3333))
 
 
-nums = list(map(int, input("Enter the number\n").split(",")))
-n = int(input("Enter the index number\n"))
+'''s = {12,32,12,34,23,56,67,45,23}
+print(s)
+s.add(99)
+print(s)
+s.pop()
+print(s)
+# s.remove(100)
+# print(s)
+s.discard(23)
+print(s)
 
-for i in range(len(nums)):
-    if n < nums[i]:
-        nums.insert(i, n)
+s.update({1,2,3,4})
+print(s)'''
+
+# s = {1,2,3}
+# s1 = {4,5,6}
+# print(s | s1)
+
+s1 = {1,2,3,4,5,6,7,8,9,10}
+s2 = {8,9,10,22,11,12,13,14}
+# s3 = s1.union(s2)
+# print(s3)
+
+# s3 = s1.intersection(s2)
+# print(s3)
+
+# s3 = s2.difference(s1)
+# print(s3)
+
+# s3 = s1.symmetric_difference(s2)
+# print(s3)
+
+# print(s1)
+# print(s1.intersection(s2))
+# print(s1)
+
+# s1.intersection_update(s2)
+# print(s1)
+
+# s1.difference_update(s2)
+# print(s1)
+# print(s1)
+# print(s1.difference(s2))
+# print(s1)
+
+# print(s1)
+# print(s1.symmetric_difference(s2))
+# print(s1)
+
+# s1.symmetric_difference_update(s2)
+# print(s1)
+
+# s1 = {1,2,3,4,5,6,78,9,10}
+# s2 = {1,2,3,4}
+# print(s1.issubset(s2))
+# print(s2 <= s1)
+
+# s1 = {1,2,3,4,5,6,7,8,9,10}
+# s2 = {1,2,3,4}
+# print(s1.issuperset(s2))
+# print(s2 >= s1)
+
+# s1 = {1,2,3,4,5,6,7,8}
+# s2 = {9,10,11,12}
+
+# print(s1.isdisjoint(s2))
+
+parent = input("Enter the parenthesis\n")
+lst = []
+
+for i in parent:
+    if i == "[" or i == "{" or i == "(":
+        lst.append(i)
+    elif i == "}" and lst[-1] == "{":
+        lst.pop()
+
+    elif i == "]" and lst[-1] == "[":
+        lst.pop()
+
+    elif i == ")" and  lst[-1] == "(":
+        lst.pop()
         break
 
-
-
+if len(lst) == 0:
+    print("parenthesis are balanced")
 else:
-    nums.append(n)
+    print("It's not imbalanced")
+    
 
-print(nums)
+
+
+
+
 
 
 
