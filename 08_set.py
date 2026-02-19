@@ -250,12 +250,18 @@ print(s)'''
 # s = list(set(name))
 # print(s)
 
-from collections import Counter
-lst = list(map(int, input("Enter the numbers\n").split()))
+# from collections import Counter
+# lst = list(map(int, input("Enter the numbers\n").split()))
 
-s = Counter(lst)
-a = [i for i in range(len(lst)) if s[i]>1]
-print(a)
+# s = Counter(lst)
+# a = [i for i in range(len(lst)) if s[i]>1]
+# print(a)
+
+a = 10
+b = 20
+print(a + b)
+
+
 
 
 
