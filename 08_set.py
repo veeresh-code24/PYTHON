@@ -224,26 +224,42 @@ print(s)'''
 
 # print(s1.isdisjoint(s2))
 
-parent = input("Enter the parenthesis\n")
-lst = []
+# parent = input("Enter the parenthesis\n")
+# lst = []
 
-for i in parent:
-    if i == "[" or i == "{" or i == "(":
-        lst.append(i)
-    elif i == "}" and lst[-1] == "{":
-        lst.pop()
+# for i in parent:
+#     if i == "[" or i == "{" or i == "(":
+#         lst.append(i)
+#     elif i == "}" and lst[-1] == "{":
+#         lst.pop()
 
-    elif i == "]" and lst[-1] == "[":
-        lst.pop()
+#     elif i == "]" and lst[-1] == "[":
+#         lst.pop()
 
-    elif i == ")" and  lst[-1] == "(":
-        lst.pop()
-        break
+#     elif i == ")" and  lst[-1] == "(":
+#         lst.pop()
+#         break
 
-if len(lst) == 0:
-    print("parenthesis are balanced")
-else:
-    print("It's imbalanced parenthesis")
+# if len(lst) == 0:
+#     print("parenthesis are balanced")
+# else:
+#     print("It's imbalanced parenthesis")
+
+
+# name = input("Enter the names\n").split()
+# s = list(set(name))
+# print(s)
+
+from collections import Counter
+lst = list(map(int, input("Enter the numbers\n").split()))
+
+s = Counter(lst)
+a = [i for i in range(len(lst)) if s[i]>1]
+print(a)
+
+
+
+
 
 
 
