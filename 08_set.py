@@ -257,9 +257,96 @@ print(s)'''
 # a = [i for i in range(len(lst)) if s[i]>1]
 # print(a)
 
-a = 10
-b = 20
-print(a + b)
+# a = 10
+# b = 20
+# print(a + b)
+
+s = [1,2,3,4,5,6,7,8]
+# sup_set = set()
+
+# for i in s:
+#     sup_set.add(i**2)
+# print(sup_set)
+# set_comp = {i**2 for i in s}
+# print(set_comp)
+
+# set = set()
+
+# for i in s:
+#     if i % 2 == 0:
+#         set.add(i**2)
+#     else:
+#         set.add(i+i)
+# print(set)
+
+# comp_set = {i**2 if i%2==0 else i+i for i in s}
+# print(comp_set)
+
+# se_comp = set()
+
+# for i in s:
+#     if i % 2 == 0:
+#         se_comp.add(i**2)
+
+# print(se_comp)
+
+# set_comp = {i**2 for i in s if i%2 == 0}
+# print(set_comp)
+
+# se = [i**2 for i in s if i % 2 == 0]
+# print(se)
+
+# s = "The Quick Brown Fox Jumps Over TheLazy dog!"
+# s = s.upper()
+# uni_alph = {i for i in s if ord(i)>=65 and ord(i)<=90}
+
+# for i in s:
+#     if ord(i) >= 65 and ord(i) <= 90:
+#         uni_alph.add(i)
+
+
+
+# if len({i for i in s if ord(i)>= 65 and ord(i)<= 90}) == 26:
+#     print(s, "it's a pangram")
+
+# else:
+#     print(s, "it's not a pangram")
+
+
+# s = "The Big Dwarf only Jumps!".upper()
+# l = [i for i in s if ord(i)>=65 and ord(i)<=90]
+
+# for i in s:
+#     if ord(i) >= 65 and ord(i) <= 90:
+#         l.append(i)
+
+# c = set(l)
+
+# if len(l) == len(c):
+    # print(s, "it's a heterogram")
+
+# else:
+    # print(s, "it's not a heterogram")
+
+s1 = frozenset({1,21,21,12,34,59,48})
+s2 = {1,2,32,21,12,23}
+print(s1)
+# s1.add(21)
+# print(s1)
+# s1.update({1,2,3})
+# print(s1)
+print(s1 | s2)
+
+
+
+
+
+    
+
+
+
+
+
 
 
 
