@@ -226,69 +226,89 @@ for i in d:
 #             d[t[0]] = t[1]
 # print(d)
 
+# s = input("Enter the string\n").upper()
+# d = {}
 
-# a = 10
-# b = 20
-# print(a+b)
+# for i in s:
+#     if i not in d:
+#         d[i] = 1
+#     else:
+#         d[i] += 1
+    
+# for i in d:
+#     if d[i] > 3:
+#         print(i)
+
+# from collections import Counter
+
+# s = input("Enter the string\n").upper()
+# d = Counter(s)
+
+# for i,j in d.items():
+#     if j>3:
+#         print(f"if {i} appears ,{d[i]} times")
+
+# s = input("Enter the string\n").upper()
+# d = {}
+
+# for i in s:
+#     d[i] = d.get(i, 0) + 1
+
+# for i,j in d.items():
+#     if j > 3:
+#         print(i)
+
+# from collections import Counter
+# s = input("Enter the string\n").upper()
+# d = Counter(s)
+
+# for i , j in d.items():
+#     if j >= 3:
+#         print(i, d[i])
+
+# lst = list(map(int, input("Enter the number").split()))
+# d = {}
+
+# for i in lst:
+#     if i not in d:
+#         d[i] = 1
+#     else:
+#         d[i] += 1 
+
+# count = 0
+# for i in d.values():
+#     count += i//2
+
+# print(count)
+
+n = int(input("Enter how much number can store\n"))
+d = {}
+
+for i in range(n+1):
+    l = input("Enter the name and number\n").split()
+    d[l[0]] = l[1]
+
+s = int(input("Enter the number of times of searching\n"))
+for i in range(s+1):
+    name = input("Enter the name u want to search\n")
+    if name in d.keys():
+        print("mob", d[name])
+
+    else:
+        print('Contact not found')
+    
 
 
-# d = {1:"java", 2:"c++", 3:"python", 4:"javascript"}
-# print(d)
-
-# print(d[1])
-# print(d[3])
-
-# d[2] = "python"
-# print(d)
-
-# d.update({5:"python", 6:"python"})
-# print(d)
-
-# d.update(eight="iranna", nine="pacchu")
-# print(d)
-
-# d[2] = "irannanna"
-# print(d)
-
-# d.pop(3)
-# print(d)
-# d.popitem()
-# print(d)
-# del d[1]
-# print(d)
-# d.clear()
-# print(d)
-# print(d.pop(99,"Not Found"))
-
-# d = {1:"a", 2:[10,20,30]}
-# print(d[1])
-# x = d[1]
-# print(x)
-# x = "b"
-# print(x)
-# print(d[1])
-
-# print(d[2])
-# l = d[2]
-# print(l)
-# l.append(40)
-# print(l)
-# print(d[2])
 
 
-d = {1:"java", 2:"c++", 3:"python", 4:"javascript"}
-print(list(d.keys()))
-print(list(d.values()))
-print(list(d.items()))
 
-for i in d.keys():
-    print(i,d[i])
 
-for i in d.values():
-    print(i)
 
-for i,j in d.items():
-    print(i,j)
+
+
+
+
+
 
 
 
