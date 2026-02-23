@@ -281,22 +281,104 @@ for i in d:
 
 # print(count)
 
-n = int(input("Enter how much number can store\n"))
+# n = int(input("Enter how much number can store\n"))
+# d = {}
+
+# for i in range(n+1):
+#     l = input("Enter the name and number\n").split()
+#     d[l[0]] = l[1]
+
+# s = int(input("Enter the number of times of searching\n"))
+# for i in range(s+1):
+#     name = input("Enter the name u want to search\n")
+#     if name in d.keys():
+#         print("mob", d[name])
+
+#     else:
+#         print('Contact not found')
+
+# n = int(input("Enter the how many numbers can store\n"))
+# d = {}
+
+# for i in range(n):
+#     l = input("enter the name and number u can store\n").upper().split()
+#     d[l[0]] = l[1]
+
+# s = int(input("Enter the number of times searching"))
+
+# for  i in range(s):
+#     name = input("Enter the which contact u want to search\n").upper()
+#     if name in d.keys():
+#         print("mob", d[name])
+
+#     else:
+#         print("Contact not found")
+
+# s = input("Enter the string\n")
+# k = int(input("Enter kth value non-repeating string\n"))
+# d = {}
+
+# for i in s:
+#     if i not in d:
+#         d[i] = 1
+#     else:
+#         d[i] += 1
+
+# count = 0
+# for i in s:
+#     if d[i] == 1:
+#         count += 1
+#         if k == count:
+#             print(i)
+#             break
+
+# import re
+# s = input("Enter the string\n").upper()
+# s = re.sub('[?,!]','',s)
+# lst = s.split()
+# d = {}
+
+# for i in lst:
+#     if i not in d:
+#         d[i] = 1
+
+#     else:
+#         d[i] += 1
+
+# for i in d:
+#     if d[i] > 3:
+#         print(i, d[i])
+
+lst = input("enter the name and marks\n").split(',')
 d = {}
 
-for i in range(n+1):
-    l = input("Enter the name and number\n").split()
-    d[l[0]] = l[1]
-
-s = int(input("Enter the number of times of searching\n"))
-for i in range(s+1):
-    name = input("Enter the name u want to search\n")
-    if name in d.keys():
-        print("mob", d[name])
-
+for i in lst:
+    t = i.split()
+    if t[0] not in d:
+        d[t[0]] = t[1]
     else:
-        print('Contact not found')
-    
+        if  int(t[1]) > int(d[t[0]]):
+            d[t[0]] = t[1]
+
+# print(d)    
+# data=sorted(d.items(),key=lambda x:x[0],reverse=True)
+
+
+
+#     print(data[i])
+
+# d = {1:'A', 2:'B', 3:'A',4:'A', 5:'C',6:'A'}
+# s = {}
+
+# for i in d:
+#     if d[i] not in s:
+#         s[d[i]] = []
+#         s[d[i]].append(i)
+#     else:
+#         s[d[i]].append(i)
+# print(s)
+        
+
 
 
 
