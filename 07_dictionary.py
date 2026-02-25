@@ -349,16 +349,16 @@ for i in d:
 #     if d[i] > 3:
 #         print(i, d[i])
 
-lst = input("enter the name and marks\n").split(',')
-d = {}
+# lst = input("enter the name and marks\n").split(',')
+# d = {}
 
-for i in lst:
-    t = i.split()
-    if t[0] not in d:
-        d[t[0]] = t[1]
-    else:
-        if  int(t[1]) > int(d[t[0]]):
-            d[t[0]] = t[1]
+# for i in lst:
+#     t = i.split()
+#     if t[0] not in d:
+#         d[t[0]] = t[1]
+#     else:
+#         if  int(t[1]) > int(d[t[0]]):
+#             d[t[0]] = t[1]
 
 # print(d)    
 # data=sorted(d.items(),key=lambda x:x[0],reverse=True)
@@ -377,6 +377,41 @@ for i in lst:
 #     else:
 #         s[d[i]].append(i)
 # print(s)
+
+# lst = input("Enter the string\n").upper().split()
+# d = {}
+
+# for i in lst:
+#     if len(i) not in d:
+#         d[len(i)] = []
+#         d[len(i)].append(i)
+
+# s_d = sorted(d.keys(), reverse=True)
+
+# for i in s_d:
+#     for j in sorted(d[i]):
+#         print(j)
+
+# lst = input("Enter the string\n").split()
+# d = {i : len(i) for i in lst}
+# print(d)
+
+# for i in lst:
+    # d[i] = len(i)
+
+# print(d)
+
+lst = [1,2,3,4,5,6,7,8,9,10]
+d = {i : i **2 if i % 2 == 0 else i**10 for i in lst}
+
+# for i in lst:
+#     if i%2 == 0:
+#         d[i] = i**2
+print(d)
+
+
+        
+
         
 
 
