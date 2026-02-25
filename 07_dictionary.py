@@ -401,13 +401,35 @@ for i in d:
 
 # print(d)
 
-lst = [1,2,3,4,5,6,7,8,9,10]
-d = {i : i **2 if i % 2 == 0 else i**10 for i in lst}
+# lst = [1,2,3,4,5,6,7,8,9,10]
+# d = {i : i **2 if i % 2 == 0 else i**10 for i in lst}
 
 # for i in lst:
 #     if i%2 == 0:
 #         d[i] = i**2
+# print(d)
+
+lst = input("Enter the string\n").split()
+d = {}
+
+for i in lst:
+    if len(i) < 6:
+        if len(i) % 2 == 0:
+            d[i.upper()] = len(i)**2
+        else:
+            d[i.upper()] = len(i)**3
+    else:
+        if len(i) % 2 == 0:
+            d[i.lower()] = len(i) ** 2
+        else:
+            d[i.lower()] = len(i) ** 3
+
 print(d)
+
+     
+
+
+
 
 
         
