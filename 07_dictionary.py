@@ -409,22 +409,43 @@ for i in d:
 #         d[i] = i**2
 # print(d)
 
-lst = input("Enter the string\n").split()
+# lst = input("Enter the string\n").split()
+# d = {}
+
+# for i in lst:
+#     if len(i) < 6:
+#         if len(i) % 2 == 0:
+#             d[i.upper()] = len(i)**2
+#         else:
+#             d[i.upper()] = len(i)**3
+#     else:
+#         if len(i) % 2 == 0:
+#             d[i.lower()] = len(i) ** 2
+#         else:
+#             d[i.lower()] = len(i) ** 3
+
+# print(d)
+
+s = int(input())
 d = {}
 
-for i in lst:
-    if len(i) < 6:
-        if len(i) % 2 == 0:
-            d[i.upper()] = len(i)**2
-        else:
-            d[i.upper()] = len(i)**3
-    else:
-        if len(i) % 2 == 0:
-            d[i.lower()] = len(i) ** 2
-        else:
-            d[i.lower()] = len(i) ** 3
 
-print(d)
+for i in range(s):
+    l = input().upper().split()
+    d[l[0]] = l[1]
+
+sear = int(input())
+
+for i in range(sear):
+    name = input("Enter a number u want to search\n").upper()
+    if name in d.keys():
+        print('mob:', d[name])
+    else:
+        print("Contact not found")
+
+
+
+
 
      
 
