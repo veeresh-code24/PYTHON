@@ -106,6 +106,16 @@ for i in nums:
     print(res)
 print(res/len(nums))'''
 
+nums = list(map(int, input("Enter the numbers\n").split()))
+res = 0
+
+for i in nums:
+    res += i
+
+s = res/len(nums)
+print(res)
+print(s)
+
 
 
 
