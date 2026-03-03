@@ -106,15 +106,19 @@ for i in nums:
     print(res)
 print(res/len(nums))'''
 
-nums = list(map(int, input("Enter the numbers\n").split()))
-res = 0
+# nums = list(map(int, input("Enter the numbers\n").split()))
+# res = 0
 
-for i in nums:
-    res += i
+# for i in nums:
+#     res += i
 
-s = res/len(nums)
-print(res)
-print(s)
+# s = res/len(nums)
+# print(res)
+# print(s)
+
+a = 10
+b = 20
+print(a+b)
 
 
 
