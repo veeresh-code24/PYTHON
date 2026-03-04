@@ -116,9 +116,9 @@ print(res/len(nums))'''
 # print(res)
 # print(s)
 
-a = 10
-b = 20
-print(a+b)
+# a = 10
+# b = 20
+# print(a+b)
 
 
 
