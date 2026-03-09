@@ -236,7 +236,39 @@ if __name__ == '__main__':
 # n = int(input())
 # factor(n)
 
+# def factorial(n):
+#     res = 1
 
+#     for i in range(1, n+1):
+#         res *= i
+
+#     return res
+
+# n = int(input())
+# print(factorial(n))
+
+# def digit_count(n):
+#     count = 0
+
+#     while n > 0:
+#         n = n // 10
+#         count += 1
+
+#     return count
+# n = int(input())
+# print(digit_count(n))
+
+def trailing_zero(n):
+    res = 0
+    power_of5 = 5
+
+    while n >= power_of5:
+        res = res + (n//power_of5)
+        power_of5 = power_of5 * 5
+    return res
+
+n = int(input())
+print(trailing_zero(n))
 
 
 
