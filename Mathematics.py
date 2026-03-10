@@ -258,17 +258,17 @@ if __name__ == '__main__':
 # n = int(input())
 # print(digit_count(n))
 
-def trailing_zero(n):
-    res = 0
-    power_of5 = 5
+# def trailing_zero(n):
+#     res = 0
+#     power_of5 = 5
 
-    while n >= power_of5:
-        res = res + (n//power_of5)
-        power_of5 = power_of5 * 5
-    return res
+#     while n >= power_of5:
+#         res = res + (n//power_of5)
+#         power_of5 = power_of5 * 5
+#     return res
 
-n = int(input())
-print(trailing_zero(n))
+# n = int(input())
+# print(trailing_zero(n))
 
 
 
