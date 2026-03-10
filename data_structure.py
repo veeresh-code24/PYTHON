@@ -29,9 +29,9 @@ print(liner_search(a,key))'''
 n = [12,21,32,43,56,78,98,99,102]
 print(span_list(n))'''
         
-# Second largest element
+# largest element
 
-def lar_array(a):
+'''def lar_array(a):
     largest = a[0]
 
     for i in range(0 ,len(a)):
@@ -41,4 +41,34 @@ def lar_array(a):
     return largest
 
 a = [12,21,3,26,7,8,122]
-print(lar_array(a))
+print(lar_array(a))'''
+
+# second largest number
+
+'''def sec_largest(a):
+    max1,max2=0,0
+
+    if a[0] > a[1]:
+        max1,max2 = a[0],a[1]
+    else:
+        max1,max2 = a[1],a[0]
+
+    for i in range(2, len(a)):
+        if a[i] > max1:
+            max2 = max1
+            max1 = a[i]
+
+        elif a[i] > max2:
+            max2 = a[i]
+
+    return max2,max1
+
+a = [12,21,87,23,43,56,78,89,110,1002]
+print(sec_largest(a))'''
+
+a = 10
+b = 20
+print(a+b)
+
+
+
