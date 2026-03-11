@@ -66,9 +66,29 @@ print(lar_array(a))'''
 a = [12,21,87,23,43,56,78,89,110,1002]
 print(sec_largest(a))'''
 
-a = 10
-b = 20
-print(a+b)
+# Biary search
 
+def binary_ser(a,key):
+    l,h,mid = 0, len(a)-1, 0
+    while l <= mid:
+        mid = l+h//2
+        if key == a[mid]:
+            return a[mid]
+        
+        elif key <= mid:
+            h = mid -1
+            l = l
+
+        else:
+            l = mid +1
+            h = h
+    return -1
+
+a = [12,21,23,31,34,31,21]
+key = 334
+print(binary_ser(a,key))
+
+    
+    
 
 
