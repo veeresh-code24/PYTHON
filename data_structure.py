@@ -108,30 +108,105 @@ print(binary_ser(a,key))'''
 # key = 99
 # print(ascending_ord(a, key))
 
-def count_lesser(a,key):
-    l,h,mid = 0 ,len(a)-1, 0
+# def count_lesser(a,key):
+#     l,h,mid = 0 ,len(a)-1, 0
 
-    while l <= h:
-        mid = (l+h)//2
+#     while l <= h:
+#         mid = (l+h)//2
 
-        if key == a[mid]:
-            return mid +1
+#         if key == a[mid]:
+#             return mid +1
         
-        elif key < mid:
-            h = mid-1
+#         elif key < mid:
+#             h = mid-1
+
+#         else:
+#             l = mid +1
+
+#     while mid+1 < len(a) and key == a[mid+1]:
+#         mid +1
+
+#         return mid
+
+# a = [2,6,12,18,21,26,33,42]
+# key = 21
+
+# print(count_lesser(a,key))
+
+
+# smaller and wqual count
+
+'''def small_count(a,key):
+    l,h = 0, len(a)
+    ans = 0
+
+    while  l <= h:
+        mid = (l+h)//2
+        if a[mid] <= key:
+            ans = mid+1
+            l = mid+1
 
         else:
-            l = mid +1
+            h = mid-1
 
-    while mid+1 < len(a) and key == a[mid+1]:
-        mid +1
+    return ans
 
-        return mid
+a = [2,3,12,24,28,36]
+key = 26
 
-a = [2,6,12,18,21,26,33,42]
-key = 21
+print(small_count(a,key))'''
 
-print(count_lesser(a,key))
+# sorted array
+
+'''def sorted_ar(a):
+    return all(a[i] >= a[i-1] for i in range(1,len(a)))
+
+    for i in range(1,len(ar)):
+        if ar[i] > ar[i-1]:
+            return True
+        
+    return False
+
+a = [1,2,4,6,8,10,12]
+print(sorted_ar(a))'''
+
+# Reverse Array
+
+'''def main(a):
+
+    i,j = 0,len(a)-1
+
+    while i < j:
+        t = a[i]
+        a[i] = a[j]
+        a[j] = t
+        i += 1
+        j -= 1
+
+a = [2,3,4,56,7,8,910]
+print(a)
+main(a)
+print(a)'''
+
+# Inverse Array
+
+def inverse_arr(ar):
+    b = [0] * len(ar)
+
+    for i in range(0,len(ar)):
+        v = ar[i]
+        b[v] = i
+
+    return b
+
+ar = [2,3,1,0,4]
+print(inverse_arr(ar))
+
+
+
+
+
+
 
 
 
