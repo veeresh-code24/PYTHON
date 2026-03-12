@@ -68,7 +68,7 @@ print(sec_largest(a))'''
 
 # Biary search
 
-def binary_ser(a,key):
+'''def binary_ser(a,key):
     l,h,mid = 0, len(a)-1, 0
     while l <= mid:
         mid = l+h//2
@@ -86,9 +86,53 @@ def binary_ser(a,key):
 
 a = [12,21,23,31,34,31,21]
 key = 334
-print(binary_ser(a,key))
+print(binary_ser(a,key))'''
 
-    
-    
+# def ascending_ord(a, key):
+#     l, h,m= 0, len(a)-1, 0
+
+#     while l <= h:
+
+#         m = (l+h)//2
+#         if key == a[m]:
+#             return m
+#         elif key < a[m]:
+#             h = m -1
+
+#         else:
+#             l = m +1
+
+#     return -1
+
+# a= [12,21,21,21,23,23,43]
+# key = 99
+# print(ascending_ord(a, key))
+
+def count_lesser(a,key):
+    l,h,mid = 0 ,len(a)-1, 0
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if key == a[mid]:
+            return mid +1
+        
+        elif key < mid:
+            h = mid-1
+
+        else:
+            l = mid +1
+
+    while mid+1 < len(a) and key == a[mid+1]:
+        mid +1
+
+        return mid
+
+a = [2,6,12,18,21,26,33,42]
+key = 21
+
+print(count_lesser(a,key))
+
+
 
 
