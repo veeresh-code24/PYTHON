@@ -190,17 +190,66 @@ print(a)'''
 
 # Inverse Array
 
-def inverse_arr(ar):
-    b = [0] * len(ar)
+# def inverse_arr(ar):
+#     b = [0] * len(ar)
 
-    for i in range(0,len(ar)):
-        v = ar[i]
-        b[v] = i
+#     for i in range(0,len(ar)):
+#         v = ar[i]
+#         b[v] = i
 
-    return b
+#     return b
 
-ar = [2,3,1,0,4]
-print(inverse_arr(ar))
+# ar = [2,3,1,0,4]
+# print(inverse_arr(ar))
+
+
+# find the first and last index position if number is same 
+
+def searchrange(nums,target):
+    l,h,mid = 0,len(nums)-1,0
+    res = [-1,-1]
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if target == nums[mid]:
+            res[0] = mid
+            h = mid-1
+
+        elif nums[mid] < target:
+            l = mid +1
+
+        else:
+            h = mid-1
+    
+    l,h,mid = 0,len(nums)-1,0
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if target == nums[mid]:
+            res[1] = mid
+            l = mid+1
+
+        elif nums[mid] < target:
+            l = mid +1
+
+        else:
+            h = mid-1
+
+    return res
+
+nums = [3,4,4,4,4,4,4,4,4,6]
+target = 4
+
+print(searchrange(nums,target))
+
+    
+
+
+
+
+
 
 
 
