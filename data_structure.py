@@ -275,29 +275,127 @@ target = 1
 print(sorted_array(a,target))'''
 
 
-def sorted_arrar(a,target):
-    l,h,mid = 0, len(a)-1,0
 
-    while l <= h:
-        mid = (l+h)//2
-        if target == a[mid]:
-            return mid
-        
-        if a[l] <= a[mid]:
-            if a[l] <= target < a[mid]:
-                h = mid -1
-            else:
-                l = mid +1
+
+# Move zero
+
+'''def moveZero(nums):
+    size = len(nums)
+
+    if size == 0 or size == 1:
+        return
+
+
+    nz,z = 0,0
+
+    while nz < size:
+        if nums[nz] != 0:
+            nums[nz],nums[z] = nums[z],nums[nz]
+            nz += 1
+            z += 1
 
         else:
-            if a[mid] < target <= a[h]:
-                l = mid+1
-            else:
-                h = mid-1
+            nz += 1
 
-    return -1
- 
+nums = [1,2,0,0,1,21]
+moveZero(nums)
+print(nums)'''
 
-a = [7,8,1,2,4,5,6]
-target = 4
-print(sorted_arrar(a,target))
+# Subarray
+
+'''def sub_array(nums):
+
+    for i in range(len(nums)):
+        for j in range(i, len(nums)):
+            print(nums[i:j+1])
+
+nums = [1,2,3,4,5]
+sub_array(nums)'''
+
+# Inverse of an array
+
+'''def inverse_arry(a):
+    b = [0]*len(a)
+
+    for i in range(len(a)):
+
+        v = a[i]
+        b[v] = i
+
+    return b
+
+a = [2,3,1,0,4]
+print(inverse_arry(a))'''
+
+
+'''def liner_search(a,key):
+    res = 0
+
+    for i in range(len(a)):
+        if a[i] == key:
+            res += 1
+
+    return res
+
+        
+a = [12,21,21,23,43,22]
+key = 21
+print(liner_search(a,key))'''
+
+# def apan_array(a):
+#     max = a[0]
+#     min = a[0]
+
+#     for i in range(len(a)):
+#         if a[i] > max:
+#             max = a[i]
+#             if a[i] < min:
+#                 min = a[i]
+
+#     return max - min
+
+# a = [1,2,3,4,5,6]
+# print(apan_array(a))
+
+
+def second_lar(a):
+    max1,max2 = a[0],a[1]
+
+    if max1 > max2:
+        max1,max2 = a[0],a[1]
+    else:
+        max1,max2 = a[1],a[0]
+
+    for i in range(2,len(a)):
+        if a[i] > max1:
+            max2 = max1
+            max1 = a[i]
+        else:
+            if a[i] > max2:
+                max2 = a[i]
+
+    return max2
+a = [1,3,24,54,34,22,98]
+print(second_lar(a))
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
