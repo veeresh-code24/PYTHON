@@ -358,7 +358,7 @@ print(liner_search(a,key))'''
 # print(apan_array(a))
 
 
-def second_lar(a):
+'''def second_lar(a):
     max1,max2 = a[0],a[1]
 
     if max1 > max2:
@@ -376,7 +376,219 @@ def second_lar(a):
 
     return max2
 a = [1,3,24,54,34,22,98]
-print(second_lar(a))
+print(second_lar(a))'''
+
+
+'''def ceil(a,key):
+    l,h= 0,len(a)-1
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if a[mid] == key:
+            return a[mid]
+        
+        elif a[mid] > key:
+            h = mid -1
+
+        else:
+            l = mid+1
+    if l < len(a):
+        return a[l]
+    else:
+        return -1
+
+
+def floor(a,key):
+    l,h= 0,len(a)-1
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if a[mid] == key:
+            return a[mid]
+        
+        elif a[mid] > key:
+            h = mid -1
+
+        else:
+            l = mid+1
+    if h >= 0:
+        return a[h]
+    else:
+        return -1
+
+a = [12,21,34,54,56,67,78]
+print(ceil(a,100))
+print(floor(a,10))'''
+
+'''def ascending_order(a,key):
+    l,h = 0,len(a)-1
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if a[mid] == key:
+            return mid
+        
+        elif a[mid] > key:
+            h = mid -1
+        else:
+            l = mid +1
+
+    return -1
+
+def descending_order(a,key):
+    l,h = 0,len(a)-1
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if a[mid] == key:
+            return mid
+        
+        elif a[mid] > key:
+            l = mid +1
+        else:
+            h = mid -1
+
+    return -1
+
+def bitonic_point(a):
+    l,r,mid = 0, len(a)-1,0
+
+    while l <= r:
+        mid = (l+r)//2
+
+        if a[mid] > a[mid-1] and a[mid] > a[mid+1]:
+            return mid
+        
+        elif a[mid] > a[mid -1] and a[mid] < a[mid +1]:
+            l = mid +1
+
+        else:
+            r = mid-1
+
+
+    return -1
+
+a = [3,4,5,6,7,8,10,8,7,6,5]
+key = 10
+
+print(bitonic_point(a))'''
+
+'''def small_count(a,key):
+    l,h,mid = 0, len(a)-1,0
+
+    while l <= h:
+        mid = (l+h)//2
+        if a[mid] == key:
+            return mid +1
+        
+        elif a[mid] >= key:
+            h = mid -1
+
+        else:
+            l = mid+1
+
+    return l
+
+a = [2,6,12,18,21,33,42]
+key = 26
+
+print(small_count(a,key))'''
+
+# first and last index
+
+'''def first_last(a,key):
+    l,h = 0,len(a)-1
+    res = [-1,-1]
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if a[mid] == key:
+            res[0] = mid 
+            h = mid-1
+
+        elif a[mid] >= key:
+            h = mid-1
+        else:
+            l = mid+1
+
+    l,h = 0,len(a)-1
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if a[mid] == key:
+            res[1] = mid 
+            l = mid+1
+
+        elif a[mid] >= key:
+            h = mid-1
+        else:
+            l = mid+1
+
+    return res
+
+a = [3,4,4,8,8,9,9,7,8]
+key = 9
+print(first_last(a,key))'''
+
+
+# square root
+
+def square_root(n):
+
+    if n == 0 or n == 1:
+        return n
+    
+
+    l,h,mid= 2,n//2,0
+    res = 0
+
+    while l <= h:
+        mid = (l+h)//2
+
+        if mid*mid == n:
+            return mid
+        
+        elif mid*mid > n:
+            h = mid-1
+
+
+        else:
+            l = mid +1
+            res = mid
+
+    return res
+n = 25
+print(square_root(n))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -394,6 +606,7 @@ print(second_lar(a))
 
 
         
+
 
 
 
