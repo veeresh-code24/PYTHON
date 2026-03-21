@@ -611,21 +611,21 @@ print(square_root(n))'''
 #     main()
 
 
-def selection_sort(arr,n):
-    for i in range(n):
-        min_index = i
-        for j in range(i +1, n):
-            if arr[j] < arr[min_index]:
-                min_index = j
-        arr[i],arr[min_index] = arr[min_index], arr[i]
-        # print(arr[i], end= " ")
+# def selection_sort(arr,n):
+#     for i in range(n):
+#         min_index = i
+#         for j in range(i +1, n):
+#             if arr[j] < arr[min_index]:
+#                 min_index = j
+#         arr[i],arr[min_index] = arr[min_index], arr[i]
+#         # print(arr[i], end= " ")
 
-arr = [12,21,34,32,21]
-n = 5
-selection_sort(arr,n)
+# arr = [12,21,34,32,21]
+# n = 5
+# selection_sort(arr,n)
 
-for i in range(n):
-    print(arr,end = " ")
+# for i in range(n):
+#     print(arr,end = " ")
 
 
 
