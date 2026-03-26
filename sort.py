@@ -1,49 +1,24 @@
-# def max_consec(nums):
-#     maxi = 0
-#     count = 0
+def sub_array(nums,k):
+    n = len(nums)
+    right = 0
+    left = 0
+    sum = nums[0]
+    max_sum = 0
 
-#     for i in range(len(nums)):
-#         if nums[i] == 1:
-#             count += 1
-#             if count > maxi:
-#                 maxi = count
+    while right < n:
+        while left <= right and sum > k:
+            sum -= nums[left]
+            left += 1
 
-#         else:
-#             count = 0
-#     return maxi
+        if sum == k:
+            max_sum = max(max_sum,right-left+1)
+        
+        right += 1
+        if right < n :
+            sum += nums[right]
 
-# nums = [1,1,0,1,1,1]
-# print(max_consec(nums))
+    return max_sum
 
-# def single(nums):
-
-#     for i in range(len(nums)):
-#         num = nums[i]
-#         count = 0
-
-#         for j in range(len(nums)):
-#             if nums[j] == num:
-#                 count += 1
-
-#         if count == 1:
-#             return num
-
-
-
-# nums = [1, 2, 2, 4, 3, 1, 4]
-# print(single(nums))
-
-def sub_array(nums):
-
-    for i in range(len(nums)):
-        su = 0
-        for j in range(i, len(nums)):
-            su = nums[j] + su
-            su = su == key
-            print(su)
-   
-            print(nums[i:j+1])
-key = 15
-nums = [1, 2, 2, 4, 3, 1, 4]
-sub_array(nums)
-
+nums = [1,2,3,1,1,1,1,4,2,3]
+k = 3
+print(sub_array(nums,k))
