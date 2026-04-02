@@ -108,25 +108,44 @@
 #     return -1
 
 
-def maxi(nums):
+# def maxi(nums):
+#     n = len(nums)
+#     max_sum = 0
+
+
+#     for i in range(n):
+
+#         for j in range(i,n):
+#             sum = 0
+#             for k in range(i,j+1):
+#                 sum += nums[k]
+
+#                 max_sum = max(max_sum,sum)
+
+
+#     return max_sum
+      
+# nums = [5,4,-1,7,8]
+# print(maxi(nums))
+
+
+def max_sum(nums):
     n = len(nums)
     max_sum = 0
 
-
     for i in range(n):
-
         for j in range(i,n):
             sum = 0
+
             for k in range(i,j+1):
                 sum += nums[k]
 
                 max_sum = max(max_sum,sum)
-
-
     return max_sum
-      
-nums = [5,4,-1,7,8]
-print(maxi(nums))
+
+
+nums = [1,2,3,4,5]
+print(max_sum(nums))
 
 
 
