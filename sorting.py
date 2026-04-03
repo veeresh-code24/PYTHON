@@ -138,7 +138,7 @@ def max_sum(nums):
             sum = 0
 
             for k in range(i,j+1):
-                sum += nums[k]
+
 
                 max_sum = max(max_sum,sum)
     return max_sum

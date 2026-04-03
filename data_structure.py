@@ -628,6 +628,80 @@ print(square_root(n))'''
 #     print(arr,end = " ")
 
 
+# def maxSubArray(nums):
+
+#         n = len(nums)
+#         mai_count = float('-inf')
+#         count = 0
+
+#         for i in range(n):
+#             count += nums[i]
+
+#             if count > mai_count:
+#                 mai_count = count
+
+#             if count < 0:
+#                 count = 0
+
+#         return mai_count
+
+# nums = [-2, -3, -7, -2, -10, -4]
+
+# print(maxSubArray(nums))
+
+
+# def buy_sell(nums):
+#     n = len(nums)
+    
+#     minimum = nums[0]
+#     maxi_profit = 0
+
+#     for i in range(1, n):
+#         cost = nums[i] - minimum
+#         maxi_profit = max(maxi_profit,cost)
+#         minimum = min(minimum,nums[i])
+
+#     return maxi_profit
+
+# nums = [7,6,4,3,1]
+# print(buy_sell(nums))
+
+
+def unionArray(nums1, nums2):
+
+        n = len(nums1)
+        s = len(nums2)
+
+        uni = set()
+
+        for i in range(n):
+            uni.add(nums1[i])
+
+
+        for i in range(s):
+            uni.add(nums2[i])
+        
+
+        ans = []
+        for j in uni:
+             ans.append(j)
+
+        return ans
+
+nums1 = [1, 2, 3, 4, 5]
+nums2 = [1, 2, 7]
+print(unionArray(nums1, nums2))
+
+
+
+
+
+
+
+
+
+
+
 
         
 
