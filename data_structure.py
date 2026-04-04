@@ -667,42 +667,65 @@ print(square_root(n))'''
 # print(buy_sell(nums))
 
 
-def unionArray(nums1, nums2):
+# def unionArray(nums1, nums2):
 
-    a1 = len(nums1)
-    a2 = len(nums2)
+#     a1 = len(nums1)
+#     a2 = len(nums2)
 
-    i = 0
-    j  = 0
-    uni = [] 
+#     i = 0
+#     j  = 0
+#     uni = [] 
 
-    while i < a1 and j < a2:
-        if nums1[i] <= nums2[j]:
-            if len(uni) == 0 or uni[-1] != nums1[i]:
-                uni.append(nums1[i])
-            i += 1
+#     while i < a1 and j < a2:
+#         if nums1[i] <= nums2[j]:
+#             if len(uni) == 0 or uni[-1] != nums1[i]:
+#                 uni.append(nums1[i])
+#             i += 1
 
-        else:
-            if len(uni) == 0 or uni[-1] != nums2[j]:
-                uni.append(nums2[j])
-            j += 1
+#         else:
+#             if len(uni) == 0 or uni[-1] != nums2[j]:
+#                 uni.append(nums2[j])
+#             j += 1
 
 
-    while j < a2:
-        if len(uni) == 0 or uni[-1] != nums2[j]:
-                uni.append(nums2[j])
-        j += 1
+#     while j < a2:
+#         if len(uni) == 0 or uni[-1] != nums2[j]:
+#                 uni.append(nums2[j])
+#         j += 1
 
-    while i < a1:
-        if len(uni) == 0 or uni[-1] != nums1[i]:
-                uni.append(nums1[i])
-        i += 1
+#     while i < a1:
+#         if len(uni) == 0 or uni[-1] != nums1[i]:
+#                 uni.append(nums1[i])
+#         i += 1
 
-    return uni
+#     return uni
          
-nums1 = [1, 2, 3, 4, 5]
-nums2 = [1, 2, 7]
-print(unionArray(nums1, nums2))
+# nums1 = [1, 2, 3, 4, 5]
+# nums2 = [1, 2, 7]
+# print(unionArray(nums1, nums2))
+
+
+def leaders_arr(nums):
+    n = len(nums)
+    maxi = float('-inf')
+    arr = []
+
+    for i in range(n-1,-1,-1):
+        if nums[i] > maxi:
+            arr.append(nums[i])
+
+        maxi = max(maxi, nums[i])
+
+    return arr[::-1]
+
+
+
+nums = [10,22,12,3,0,6]
+print(leaders_arr(nums))
+
+
+
+    
 
 
 
