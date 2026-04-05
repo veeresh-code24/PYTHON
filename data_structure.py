@@ -745,7 +745,8 @@ def longest_consec(nums):
 
     return longest
 
-nums = []
+
+nums = [100,4,200, 1, 3, 2]
 print(longest_consec(nums))
 
 
