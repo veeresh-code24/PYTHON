@@ -705,23 +705,51 @@ print(square_root(n))'''
 # print(unionArray(nums1, nums2))
 
 
-def leaders_arr(nums):
+# def leaders_arr(nums):
+#     n = len(nums)
+#     maxi = float('-inf')
+#     arr = []
+
+#     for i in range(n-1,-1,-1):
+#         if nums[i] > maxi:
+#             arr.append(nums[i])
+
+#         maxi = max(maxi, nums[i])
+
+#     return arr[::-1]
+
+
+
+# nums = [10,22,12,3,0,6]
+# print(leaders_arr(nums))
+
+def longest_consec(nums):
     n = len(nums)
-    maxi = float('-inf')
-    arr = []
 
-    for i in range(n-1,-1,-1):
-        if nums[i] > maxi:
-            arr.append(nums[i])
+    if n == 0:
+        return 0
+    
+    longest = 0
+    st = set(nums)
 
-        maxi = max(maxi, nums[i])
+    for it in st:
+        if (it-1) not in st:
+            count = 1
+            x = it
 
-    return arr[::-1]
+            while (x+1) in st:
+                x += 1
+                count += 1
+
+            longest = max(longest,count )
+
+    return longest
+
+nums = []
+print(longest_consec(nums))
 
 
 
-nums = [10,22,12,3,0,6]
-print(leaders_arr(nums))
 
 
 
