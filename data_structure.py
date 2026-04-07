@@ -723,31 +723,52 @@ print(square_root(n))'''
 # nums = [10,22,12,3,0,6]
 # print(leaders_arr(nums))
 
-def longest_consec(nums):
-    n = len(nums)
+# def longest_consec(nums):
+#     n = len(nums)
 
-    if n == 0:
-        return 0
+#     if n == 0:
+#         return 0
     
-    longest = 0
-    st = set(nums)
+#     longest = 0
+#     st = set(nums)
 
-    for it in st:
-        if (it-1) not in st:
-            count = 1
-            x = it
+#     for it in st:
+#         if (it-1) not in st:
+#             count = 1
+#             x = it
 
-            while (x+1) in st:
-                x += 1
-                count += 1
+#             while (x+1) in st:
+#                 x += 1
+#                 count += 1
 
-            longest = max(longest,count )
+#             longest = max(longest,count )
 
-    return longest
+#     return longest
 
 
-nums = [100,4,200, 1, 3, 2]
-print(longest_consec(nums))
+# nums = [100,4,200, 1, 3, 2]
+# print(longest_consec(nums))
+
+def three_sum(nums):
+    n = len(nums)
+    st = set()
+
+    for i in range(n):
+        for j in range(i+1,n):
+            for k in range(j+1,n):
+                if nums[i] + nums[j] + nums[k] == 0:
+                    temp = [nums[i],nums[j],nums[k]]
+                    temp.sort()
+                    st.add(tuple(temp))
+
+    
+    ans = [list(x) for x in st]
+    return ans
+nums = [-1,0,1,2,-1,-4]
+print(three_sum(nums))
+
+
+
 
 
 
