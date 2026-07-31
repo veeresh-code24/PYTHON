@@ -70,24 +70,24 @@ class Node:
 
     # return head
 
-def lengthofLL(head):
+# def lengthofLL(head):
 
-    cnt = 0
-    temp = head
+#     cnt = 0
+#     temp = head
 
-    while temp != None:
-        cnt += 1
+#     while temp != None:
+#         cnt += 1
 
-        temp = temp.next
+#         temp = temp.next
 
-    return cnt
+#     return cnt
 
-def main():
-    arr = [2,4,6,8]
+# def main():
+#     arr = [2,4,6,8]
 
-    head = convertArrayLL(arr)
+#     head = convertArrayLL(arr)
 
-    print(lengthofLL(head))
+#     print(lengthofLL(head))
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
